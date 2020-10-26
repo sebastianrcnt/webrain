@@ -58,6 +58,7 @@ ApiRouter.get("/process/connect-experiment-to-project", (req, res) => {
   }
 });
 
+// admin에서 project 내의 experiment 고르기, unit-project내의 project 포함/제외 API
 ApiRouter.get("/process/disconnect-experiment-to-project", (req, res) => {
   const { projectId, experimentId } = req.query;
   if (projectId && experimentId) {
@@ -201,8 +202,6 @@ ApiRouter.post("/email", (req, res) => {
 });
 
 const multer = require("multer");
-const rimraf = require("rimraf");
-const extract = require("extract-zip");
 
 const experimentZipUploader = multer({
   dest: "uploads/etc/",
