@@ -297,12 +297,15 @@ AdminRouter.get(
   })
   .delete("/unit-project/:id", (req, res) => {
     const { id } = req.params.id;
-    prisma.unitProject.delete({ where: { id } }).then(() => {
-      res.status(200);
-    }).catch((error) => {
-      console.error(error);
-      res.status(500).send();
-    })
+    prisma.unitProject
+      .delete({ where: { id } })
+      .then(() => {
+        res.status(200).send();
+      })
+      .catch((error) => {
+        console.error(error);
+        res.status(500).send();
+      });
   });
 AdminRouter.get(
   "/edit",
