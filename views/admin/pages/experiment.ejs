@@ -75,7 +75,7 @@
           </div>
           <div>커버 이미지 수정</div>
           <img
-            src="/uploads/general/<%= experiment.coverFileId %>"
+            src="/uploads/<%= experiment.coverFileId %>"
             alt="이미지가 업로드되지 않았습니다"
           />
           <div class="file has-name">
@@ -123,19 +123,27 @@
           <div class="my-2">실험파일 수정</div>
           <div class="file has-name">
             <label class="file-label">
+              <input
+                class="file-input"
+                id="zip-file"
+                type="file"
+                name="zip"
+                accept=".zip"
+              />
               <span class="file-cta">
                 <span class="file-icon">
                   <i class="fas fa-upload"></i>
                 </span>
-                <a
-                  href="/uploads/<%= experiment.id %>/<%= experiment.fileName %>"
-                  class="file-label"
-                >
-                  실험파일 업로드
-                </a>
+                실험파일 업로드
               </span>
-              <span class="file-name"> <%= experiment.fileName %> </span>
-              <button class="button is-primary ml-2">반영하기</button>
+              <span class="file-name" id="zip-file"></span>
+              <script>
+                $("input#zip-file").on("change", function (event) {
+                  var i = $(this).prev("label").clone();
+                  var file = $("input#zip-file")[0].files[0].name;
+                  $("#zip-file-name").text(file);
+                });
+              </script>
             </label>
           </div>
           <button type="submit" class="button is-success is-pulled-right">
