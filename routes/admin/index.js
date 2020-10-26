@@ -251,13 +251,13 @@ AdminRouter.get(
   )
   .post("/unit-projects/new", uploader.single("cover"), (req, res, next) => {
     const { name, description } = req.body;
-    const id = req.params.id;
     const coverFileId = req.file ? req.file.filename : null;
-    if (id && name && description) {
+    if (name && description) {
+      const id = shortid.generate();
       prisma.unitProject
         .create({
           data: {
-            id: shortid.generate(),
+            id, 
             name,
             description,
             coverFileId,
