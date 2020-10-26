@@ -8,8 +8,8 @@ const fs = require("fs");
 const Parser = require("../parser/parser.js");
 
 exports.createExperiment = async (req, res, next) => {
-  const coverFile = req.files['cover'][0];
-  const zipFile = req.files['zip'][0];
+  const coverFile = req.files["cover"][0];
+  const zipFile = req.files["zip"][0];
 
   try {
     // extract
@@ -69,11 +69,56 @@ exports.createExperiment = async (req, res, next) => {
 
 exports.updateExperiment = async (req, res, next) => {
   const { name, description, tags } = req.body;
-  const coverFileId = zipFile ? req.file.filename : null;
+
+  const coverFile = req.files["cover"] ? req.files["cover"][0] : null;
+  const zipFile = req.files["zip"] ? req.files["zip"][0] : null;
+
+  // if we need to update zipFile, do the work
+  // read data
+  if (zipFile) {
+    try {
+      const data = fs.readFileSync(
+        path.join(
+          path.resolve(zipFile.destination), // /uploads
+          path.parse(zipFile.originalname).name, // name = 1_lake_nback_i
+          "exp.txt"
+        ),
+        "utf-8"
+      );
+
+      // parse data
+      const parser = new Parser(data);
+      const result = parser.execute().json();
+      req.parseResultJson = result;
+    } catch (error) {
+      next({
+        intended: true,
+        message: "파싱하는 과정에서 오류가 발생했습니다.",
+        error,
+      });
+      return;
+    }
+  }
   try {
+    let nextExperiment = {
+      name,
+      description,
+      tags,
+    };
+    if (coverFile) {
+      nextExperiment["coverFileId"] = coverFile.filename;
+    }
+    if (zipFile) {
+      nextExperiment = {
+        ...nextExperiment,
+        fileId: zipFile.filename, // filename = upload id..
+        fileName: zipFile.originalname,
+        json: req.parseResultJson,
+      };
+    }
     await prisma.experiment.update({
       where: { id: req.params.id },
-      data: { name, description, tags, coverFileId },
+      data: nextExperiment,
     });
     res.render("utils/message-with-link", {
       message: "실험이 성공적으로 저장되었습니다",
@@ -81,127 +126,11 @@ exports.updateExperiment = async (req, res, next) => {
       linkname: "실험 목록 페이지로 이동",
     });
   } catch (error) {
-    next(error);
+    next({
+      intended: true,
+      message: "데이터베이스 저장 중에 문제가 발생했습니다.",
+      error,
+    });
+    return;
   }
 };
-/*
-  req.files looks like:
-  {
-    coverFile: {
-      fieldname: 'cover',
-      originalname: '물풍선.png',
-      encoding: '7bit',
-      mimetype: 'image/png',
-      destination: 'uploads/',
-      filename: '841d2d24601cddd9838b4b62fef94c00',
-      path: 'uploads/841d2d24601cddd9838b4b62fef94c00',
-      size: 37012
-    },
-    zipFile: {
-      fieldname: 'zip',
-      originalname: '1_lake_nback_i.zip',
-      encoding: '7bit',
-      mimetype: 'application/zip',
-      destination: 'uploads/',
-      filename: '1dd9bb0b2ae332d0f26cec0aa0302d5d',
-      path: 'uploads/1dd9bb0b2ae332d0f26cec0aa0302d5d',
-      size: 5928993
-    }
-  }
-
-  file structure:
-  uploads
-  ├── 1_lake_nback_i
-  ├── 1dd9bb0b2ae332d0f26cec0aa0302d5d
-  └── 841d2d24601cddd9838b4b62fef94c00
-  */
-
-// const extractZip = (req) =>
-//   new Promise((resolve, reject) => {
-//     extract(req.file.path, { dir: path.resolve(req.file.destination) })
-//       .then((value) => {
-//         resolve(req);
-//       })
-//       .catch((err) => {
-//         console.log(err);
-//         throw {
-//           intended: true,
-//           message: "압축 파일(zip)을 푸는 데 실패하였습니다.",
-//         };
-//       });
-//   });
-
-// const parseJson = (req) => {
-//   try {
-//     const data = fs.readFileSync(
-//       path.join(
-//         path.resolve(req.file.destination),
-//         path.parse(filename).name,
-//         "exp.txt"
-//       ),
-//       "utf-8"
-//     );
-//     const parser = new Parser(data);
-//     const result = parser.execute().json();
-//     req.parseResultJson = result;
-//     return Promise.resolve(req);
-//   } catch (err) {
-//     console.log(err);
-//     throw {
-//       intended: true,
-//       message: "파싱하는 과정에서 오류가 발생했습니다.",
-//     };
-//   }
-// };
-
-// const writeToDatabase = (req) => {
-//   prisma.experiment
-//     .create({
-//       data: {
-//         id: req.fileId,
-//         User: { connect: { email: req.user.email } },
-//         name: req.body.name,
-//         description: req.body.description,
-//         fileId: req.fileId,
-//         fileName: req.file.originalname,
-//         json: req.parseResultJson,
-//         tags: req.body.tags.trim(),
-//       },
-//     })
-//     .then((experiment) => {
-//       res.render("utils/message-with-link", {
-//         message: "생성이 완료되었습니다",
-//         link: "/admin/experiments",
-//         linkname: "실험 목록 페이지로 이동",
-//       });
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       res.render("utils/message", { message: "Error code 1213" });
-//     });
-// };
-
-// const createExperiment = async (req, res) => {
-//   const { fieldname, originalname, destination, filename } = req.file;
-//   console.log({
-//     fieldname,
-//     originalname,
-//     destination,
-//     filename,
-//   });
-
-//   extractZip(req)
-//     .then(parseJson)
-//     .then(writeToDatabase)
-//     .catch(respondWithError(res));
-// };
-
-// const ExperimentControllers = {
-//   createExperiment,
-//   middlewares: {
-//     parseJson,
-//     writeToDatabase,
-//   },
-// };
-
-// module.exports = ExperimentControllers;
