@@ -249,60 +249,52 @@ AdminRouter.get(
     "/unit-projects/new",
     RenderControllers.render("admin/pages/unit-projects-new")
   )
-  .post(
-    "/unit-projects/new",
-    uploader.single("cover"),
-    (req, res, next) => {
-      const { name, description } = req.body;
-      const id = req.params.id;
-      const coverFileId = req.file ? req.file.filename : null;
-      if (id && name && description) {
-        prisma.unitProject
-          .create({
-            data: {
-              id: shortid.generate(),
-              name,
-              description,
-              coverFileId,
-            },
-          })
-          .then(() => {
-            res.redirect(`/admin/unit-project/${id}`);
-          })
-          .catch(respondWithError());
-      } else {
-        res.status(400).send();
-      }
+  .post("/unit-projects/new", uploader.single("cover"), (req, res, next) => {
+    const { name, description } = req.body;
+    const id = req.params.id;
+    const coverFileId = req.file ? req.file.filename : null;
+    if (id && name && description) {
+      prisma.unitProject
+        .create({
+          data: {
+            id: shortid.generate(),
+            name,
+            description,
+            coverFileId,
+          },
+        })
+        .then(() => {
+          res.redirect(`/admin/unit-project/${id}`);
+        })
+        .catch(respondWithError());
+    } else {
+      res.status(400).send();
     }
-  )
-  .post(
-    "/unit-project/:id",
-    uploader.single("cover"),
-    (req, res, next) => {
-      const { name, description } = req.body;
-      const id = req.params.id;
-      const coverFileId = req.file ? req.file.filename : null;
-      if (id && name && description) {
-        prisma.unitProject
-          .update({
-            where: {
-              id,
-            },
-            data: {
-              name,
-              description,
-              coverFileId,
-            },
-          })
-          .then(() => {
-            res.redirect(`/admin/unit-project/${id}`);
-          })
-          .catch(respondWithError());
-      } else {
-        res.status(400).send();
-      }
+  })
+  .post("/unit-project/:id", uploader.single("cover"), (req, res, next) => {
+    const { name, description } = req.body;
+    const id = req.params.id;
+    const coverFileId = req.file ? req.file.filename : null;
+    if (id && name && description) {
+      prisma.unitProject
+        .update({
+          where: {
+            id,
+          },
+          data: {
+            name,
+            description,
+            coverFileId,
+          },
+        })
+        .then(() => {
+          res.redirect(`/admin/unit-project/${id}`);
+        })
+        .catch(respondWithError());
+    } else {
+      res.status(400).send();
     }
-  );
+  });
 AdminRouter.get(
   "/edit",
   HomeProvider,
