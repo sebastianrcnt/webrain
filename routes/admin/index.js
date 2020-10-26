@@ -257,7 +257,7 @@ AdminRouter.get(
       prisma.unitProject
         .create({
           data: {
-            id, 
+            id,
             name,
             description,
             coverFileId,
@@ -294,6 +294,15 @@ AdminRouter.get(
     } else {
       res.status(400).send();
     }
+  })
+  .delete("/unit-project/:id", (req, res) => {
+    const { id } = req.params.id;
+    prisma.unitProject.delete({ where: { id } }).then(() => {
+      res.status(200);
+    }).catch((error) => {
+      console.error(error);
+      res.status(500).send();
+    })
   });
 AdminRouter.get(
   "/edit",

@@ -21,9 +21,7 @@
             <tbody>
               <% for( let unitProject of unitProjects ) { %>
               <tr>
-                <td>
-                  <%= unitProject.id %>
-                </td>
+                <td><%= unitProject.id %></td>
                 <td><%= unitProject.name %></td>
                 <td>
                   <a
@@ -32,6 +30,13 @@
                   >
                     <i class="fa fa-edit mr-1"></i>수정
                   </a>
+                  <button
+                    data-unit-project-id="<%= unitProject.id %>"
+                    type="button"
+                    class="button delete-unit-project-button is-danger is-small is-centered"
+                  >
+                    <i class="fa fa-trash mr-1"></i>삭제
+                  </button>
                 </td>
               </tr>
               <% } %>
@@ -49,5 +54,19 @@
       </section>
     </div>
   </body>
-  <script></script>
+  <script>
+    $(".delete-unit-project-button").on("click", (event) => {
+      const unitProjectId = $(event.target).attr("data-unit-project-id");
+      $.ajax({ method: "delete", url: `/admin/unit-project/${unitProjectId}` })
+        .done(() => {
+          alert("성공적으로 삭제되었습니다");
+        })
+        .fail(() => {
+          alert("삭제에 실패하였습니다");
+        })
+        .always((result) => {
+          window.location.reload();
+        });
+    });
+  </script>
 </html>
