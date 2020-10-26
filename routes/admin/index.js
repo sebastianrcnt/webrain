@@ -1,68 +1,43 @@
+// System Imports
 const express = require("express");
-const AdminRouter = express.Router();
-const { LevelRestrictor } = require("../../middlewares/filter-access");
-const { RESEARCHER } = require("../../levels/levels");
-const UserControllers = require("../../controllers/users");
-const RenderControllers = require("../../controllers/render");
-const ContextProviders = require("../../providers");
-const multer = require("multer");
-const ExperimentControllers = require("../../controllers/experiments");
+const extract = require("extract-zip");
 const shortid = require("shortid");
-const fs = require("fs");
 const rimraf = require("rimraf");
 const path = require("path");
-const experimentZipUploader = multer({
-  storage: multer.diskStorage({
-    destination: function (req, file, cb) {
-      req.fileId = shortid.generate();
-      fs.mkdirSync("uploads/" + req.fileId);
-      cb(null, "uploads/" + req.fileId);
-    },
-    filename: function (req, file, cb) {
-      cb(null, file.originalname);
-    },
-  }),
-});
 
-const generalUploader = multer({ dest: "uploads/" });
-
-const respondWithError = require("../../middlewares/error");
+// ORM
 const { PrismaClient } = require("@prisma/client");
-const ProjectControllers = require("../../controllers/projects");
-const HomeProvider = require("../../providers/home");
-const sendNotification = require("../../services/emailNotification");
-const UnitProjectsProvider = require("../../providers/unit-projects");
-const ProjectsProvider = require("../../providers/projects");
 const prisma = new PrismaClient();
 
-// Pages
+// Controllers
+const UserControllers = require("../../controllers/users");
+const RenderControllers = require("../../controllers/render");
+const ExperimentControllers = require("../../controllers/experiments");
+const ProjectControllers = require("../../controllers/projects");
+
+// Providers
+const ContextProviders = require("../../providers");
+const UnitProjectsProvider = require("../../providers/unit-projects");
+const ProjectsProvider = require("../../providers/projects");
+const HomeProvider = require("../../providers/home");
+
+// Uploaders
+const { uploader } = require("../../middlewares/uploaders");
+
+// Utils
+const { RESEARCHER } = require("../../levels/levels");
+const { LevelRestrictor } = require("../../middlewares/filter-access");
+const respondWithError = require("../../middlewares/error");
+const sendNotification = require("../../services/emailNotification");
+
+const AdminRouter = express.Router();
+
+// Routing
 AdminRouter.get("/login", RenderControllers.render("admin/pages/login"))
-  .get("/register", RenderControllers.render("admin/pages/register"))
   .get("/logout", UserControllers.eraseTokenAndRedirectToAdminLogin)
-  .post(
-    "/register",
-    (req, res, next) => {
-      console.log("register");
-      prisma.user
-        .findMany({ where: { level: { gte: 200 } } })
-        .then(async (users) => {
-          console.log(`sending emails to ${users.length} users...`);
-          for (let user of users) {
-            console.log(`sending email to ${user.email}`);
-            await sendNotification(user.email);
-            console.log(`sent email to ${user.email}`);
-          }
-          console.log("sent all emails");
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-      next();
-    },
-    UserControllers.createUser
-  )
   .post("/login", UserControllers.loginAndSignToken);
 
+// Users
 AdminRouter.use(LevelRestrictor(100));
 AdminRouter.get(
   "/users",
@@ -97,6 +72,7 @@ AdminRouter.get(
   ContextProviders.provideExperimentsContext(),
   RenderControllers.render("admin/pages/experiments")
 )
+  // get pages
   .get(
     "/experiments/new",
     LevelRestrictor(RESEARCHER),
@@ -107,28 +83,25 @@ AdminRouter.get(
     ContextProviders.provideExperimentContextById(),
     RenderControllers.render("admin/pages/experiment")
   )
+  // create experiment
   .post(
     "/experiments",
-    experimentZipUploader.single("experiment-file"),
+    uploader.fields([
+      { name: "cover", maxCount: 1 },
+      { name: "zip", maxCount: 1 },
+    ]),
     ExperimentControllers.createExperiment
   )
-  .post("/experiments/:id", generalUploader.single("cover"), (req, res) => {
-    const { name, description, tags } = req.body;
-    const coverFileId = req.file ? req.file.filename : null;
-    prisma.experiment
-      .update({
-        where: { id: req.params.id },
-        data: { name, description, tags, coverFileId },
-      })
-      .then((experiment) => {
-        res.render("utils/message-with-link", {
-          message: "실험이 성공적으로 저장되었습니다",
-          link: "/admin/experiments",
-          linkname: "실험 목록 페이지로 이동",
-        });
-      })
-      .catch(respondWithError(res));
-  })
+  // update experiment
+  .post(
+    "/experiments/:id",
+    uploader.fields([
+      { name: "cover", maxCount: 1 },
+      { name: "zip", maxCount: 1 },
+    ]),
+    ExperimentControllers.updateExperiment
+  )
+  // delete experiment
   .delete("/experiments/:id", LevelRestrictor(100), (req, res, next) => {
     prisma.experiment
       .delete({ where: { id: req.params.id } })
@@ -167,7 +140,7 @@ AdminRouter.get(
   .post("/projects", ProjectControllers.createProject)
   .post(
     "/projects/:id",
-    generalUploader.single("cover"),
+    uploader.single("cover"),
     ContextProviders.provideProjectContextById(),
     (req, res) => {
       const coverFileId = req.file ? req.file.filename : null;
@@ -278,7 +251,7 @@ AdminRouter.get(
   )
   .post(
     "/unit-projects/new",
-    generalUploader.single("cover"),
+    uploader.single("cover"),
     (req, res, next) => {
       const { name, description } = req.body;
       const id = req.params.id;
@@ -304,7 +277,7 @@ AdminRouter.get(
   )
   .post(
     "/unit-project/:id",
-    generalUploader.single("cover"),
+    uploader.single("cover"),
     (req, res, next) => {
       const { name, description } = req.body;
       const id = req.params.id;
