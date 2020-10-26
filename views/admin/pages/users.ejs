@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ../partials/head %>
+  <body>
+    <% include ../partials/navbar %>
+    <div class="px-3">
+      <section>
+        <!-- Project -->
+        <div class="card px-3 py-3">
+          <table class="table is-fullwidth has-text-centered" id="projects-table">
+            <thead>
+              <tr>
+                <th>이름</th>
+                <th>이메일</th>
+                <th>등급</th>
+                <th>액션</th>
+              </tr>
+            </thead>
+            <tbody class="is-vcentered">
+              <% for( let user of users ) { %>
+              <tr>
+                <td><%= user.name %></td>
+                <td><%= user.email %></td>
+                <td>
+                  <%= user.level >=200 ? "관리자" : user.level >=100 ? "연구자" : "실험대상자" %> (<%= user.level %>)
+                </td>
+                <td>
+                  <a href="/admin/users/<%= user.email %>" class="button is-info is-small is-centered"> <i class="fa fa-edit mr-1"></i>수정/상세 </a>
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script></script>
+</html>

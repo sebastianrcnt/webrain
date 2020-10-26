@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ../partials/head %>
+  <body>
+    <% include ../partials/navbar %>
+    <div class="px-3 pb-6">
+      <div class="container">
+        <h1 class="title">실험 생성하기</h1>
+        <form action="/admin/experiments" method="POST" enctype="multipart/form-data">
+          <div class="columns">
+            <label for="name" class="column">
+              실험명
+              <input type="text" class="input" name="name" id="" required />
+            </label>
+          </div>
+          <div class="columns">
+            <label for="" class="column is-desktop">
+              실험 태그
+              <input type="text" class="input" name="tags" id="" placeholder="슬래쉬로 구분 ex) 태그1/태그2/태그3"required />
+            </label>
+          </div>
+          <div class="columns">
+            <label for="" class="column is-desktop">
+              실험 설명
+              <textarea name="description" class="textarea" required></textarea>
+            </label>
+          </div>
+          <div>실험파일 업로드</div>
+          <div class="file has-name">
+            <label class="file-label">
+              <input class="file-input" type="file" name="experiment-file" accept=".zip" required />
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label"> 파일 고르기... </span>
+              </span>
+              <span class="file-name"> </span>
+            </label>
+          </div>
+          <div class="content mt-6">
+            <h6>업로드 파일 규칙</h6>
+            <ol>
+              <li>ZIP 파일이어야 합니다</li>
+              <li>하나의 폴더만을 압축하여야 합니다.</li>
+              <li>압축 파일의 이름이 원본 폴더의 이름 + .zip 이어야 합니다. (<code>test/</code> => <code>test.zip</code>)</li>
+              <li><code>exp.txt</code>파일이 있어야 합니다.</li>
+            </ol>
+          </div>
+          <!-- 모달 끝 -->
+          <button class="button is-success is-pulled-right">저장하기</button>
+          <button class="button is-secondary is-pulled-right mr-2">취소하기</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(() => {
+      $("#search-experiments").DataTable()
+      $("#qr").attr("url", "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=somedata")
+    })
+  </script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="/css/login.css" />
+  <body>
+    <div class="wrap-all">
+      <% include ../partials/header %>
+      <!-- login contents start -->
+      <section class="section section-1">
+        <div action="/main/register" method="POST" class="login-form">
+          <form method="post" name="login-form">
+            <div class="item-input">
+              <label for="email">이메일</label>
+              <input type="email" name="email" id="email" placeholder="이메일을 입력하세요" autofocus />
+            </div>
+            <div class="item-input">
+              <label for="name">이름</label>
+              <input type="text" name="name" id="name" placeholder="이름을 입력하세요" autofocus />
+            </div>
+            <div class="item-input">
+              <label for="phone">전화번호</label>
+              <input type="phone" name="phone" id="name" placeholder="전화번호를 입력하세요" autofocus />
+            </div>
+            <div class="item-input">
+              <label for="password">비밀번호</label>
+              <input type="password" name="password" id="password" placeholder="비밀번호를 입력하세요" autofocus />
+            </div>
+            <div class="item-input">
+              <label for="password2">비밀번호 확인</label>
+              <input type="password" name="password2" id="password" placeholder="비밀번호 확인" autofocus />
+            </div>
+            <input type="submit" value="회원가입" class="login-btn" />
+          </form>
+          <div class="help">
+            <a href="/main/login">로그인</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- login contents end -->
+      <% include ../partials/footer %>
+    </div>
+    <script src="../js/basic.js"></script>
+  </body>
+</html>

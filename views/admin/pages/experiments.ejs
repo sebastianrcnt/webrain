@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ../partials/head %>
+  <body>
+    <% include ../partials/navbar %>
+    <div class="px-3">
+      <section>
+        <!-- Project -->
+        <div class="card px-3 py-3">
+          <table class="table is-fullwidth has-text-centered" id="projects-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>이름</th>
+                <th>소유자</th>
+                <th>액션</th>
+              </tr>
+            </thead>
+            <tbody class="is-vcentered">
+              <% for( let experiment of experiments ) { %>
+              <tr>
+                <td>
+                  <%= experiment.id %>
+                </td>
+                <td><%= experiment.name %></td>
+                <td>
+                  <a href="/admin/users/<%= experiment.User.email %>">
+                    <%= experiment.User.name %>
+                  </a>
+                </td>
+                <td>
+                  <a href="/admin/experiments/<%= experiment.id %>" class="button is-info is-small is-centered"> <i class="fa fa-edit mr-1"></i>수정 </a>
+                  <button data-experiment-id="<%= experiment.id %>" type="button" class="button delete-experiment-button is-danger is-small is-centered"><i class="fa fa-trash mr-1"></i>삭제</button>
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+            <tfoot>
+              <a href="/admin/experiments/new" class="button is-primary is-pulled-right mr-2 mb-6">
+                새로운 실험
+              </a>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    $(document).ready(() => {
+      $(".delete-experiment-button").on("click", (event) => {
+        const experimentId = $(event.target).attr("data-experiment-id")
+        $.ajax({ method: "delete", url: `/admin/experiments/${experimentId}` })
+          .done(() => {
+            alert("성공적으로 삭제되었습니다")
+          })
+          .fail((error) => {
+            alert("삭제에 실패하였습니다")
+          })
+          .always((result) => {
+            window.location.reload()
+          })
+      })
+    })
+  </script>
+</html>

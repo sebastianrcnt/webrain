@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ../partials/head %>
+  <body>
+    <% include ../partials/navbar %>
+    <div class="px-3 pb-6">
+      <div class="container">
+        <h1 class="title">단위프로젝트 생성</h1>
+        <form action="/admin/unit-projects/new" method="POST" enctype="multipart/form-data"> 
+          <div class="columns">
+            <label for="name" class="column">
+              단위프로젝트 ID
+              <input
+                type="text"
+                class="input"
+                name="id"
+                disabled
+              />
+            </label>
+          </div>
+          <div class="columns">
+            <label for="name" class="column">
+              단위프로젝트명
+              <input
+                type="text"
+                class="input"
+                name="name"
+                id=""
+              />
+            </label>
+          </div>
+          <div class="columns">
+            <label for="" class="column is-desktop">
+              단위프로젝트 설명
+              <textarea name="description" class="textarea"></textarea>
+            </label>
+          </div>
+          <div>커버 이미지 업로드</div>
+          <img alt="이미지가 업로드되지 않았습니다">
+          <div class="file has-name">
+            <label class="file-label">
+              <input class="file-input" type="file" name="cover" accept=".png,.jpg,.jpeg,.svg" />
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label"> 이미지 고르기 </span>
+              </span>
+              <span class="file-name"> </span>
+            </label>
+          </div>
+
+          <div class="row mt-3">
+            <button type="submit" class="button is-success is-pulled-right">저장하기</button>
+            <button type="button" id="delete" class="button is-danger is-pulled-right mr-2">삭제하기</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(() => {
+      $("#project-selector").select2();
+    });
+  </script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="/css/login.css" />
+  <body>
+    <div class="wrap-all">
+      <% include ../partials/header %>
+      <!-- login contents start -->
+      <section class="section section-1">
+        <div class="login-form">
+          <form action="/main/login" method="post" name="login-form">
+            <div class="id-input item-input">
+              <label for="id">이메일</label>
+              <input type="email" name="email" id="email" required placeholder="이메일을 입력하세요" autofocus />
+            </div>
+            <div class="password-input item-input">
+              <label for="password">비밀번호</label>
+              <input type="password" name="password" id="password" placeholder="비밀번호를 입력하세요" required />
+            </div>
+            <input type="submit" value="로그인" class="login-btn" />
+          </form>
+          <div class="help">
+            <a href="/main/register">회원가입</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- login contents end -->
+      <% include ../partials/footer %>
+    </div>
+    <script src="../js/basic.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>

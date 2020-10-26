@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ../partials/head %>
+  <body>
+    <% include ../partials/navbar %>
+    <div class="px-3 pb-6">
+      <div class="container">
+        <h1 class="title">유저 상세</h1>
+        <form action="/admin/users/<%= user.email %>" method="POST">
+          <div class="columns">
+            <label for="name" class="column">
+              이름
+              <input
+                type="text"
+                class="input"
+                name="name"
+                id=""
+                value="<%= user.name %>"
+                disabled
+              />
+            </label>
+          </div>
+          <div class="columns">
+            <label for="name" class="column">
+              이메일
+              <input
+                type="email"
+                class="input"
+                name="email"
+                id=""
+                value="<%= user.email %>"
+                disabled
+              />
+            </label>
+          </div>
+          <div class="columns">
+            <label for="name" class="column">
+              전화번호
+              <input
+                type="phone"
+                class="input"
+                name="phone"
+                id=""
+                value="<%= user.phone %>"
+                disabled
+              />
+            </label>
+          </div>
+          <h3>권한 설정</h3>
+          <div class="select">
+            <select
+              name="level"
+              >
+              <% const levelValue = Math.min(parseInt(user.level/100)*100, 200) %>
+              <% const options = [{name: '실험대상자', value: 0}, {name:
+              '연구자', value: 100}, {name: '관리자', value: 200}];%> <% for( let
+              option of options ) { %>
+                <option value="<%= option.value %>" <%= levelValue == option.value ? 'selected' : '' %> ><%= option.name %> </option>
+                <% } %>
+            </select>
+          </div>
+          <div class="row mt-3">
+            <button type="submit" class="button is-success is-pulled-right">저장하기</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(() => {
+    });
+  </script>
+</html>

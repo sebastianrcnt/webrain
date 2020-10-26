@@ -1,0 +1,23 @@
+Task WM SST
+[Background]
+image BI1 img/b2.png
+[EndBackground]
+
+[Descriptions]
+audio A1 img/coffee.mp3
+image s1 img/1.png 
+image s2 img/2.png 
+image s3 img/3.png 
+image s4 img/4.png
+image s5 img/5.png
+[EndDescriptions]                                                                                 
+
+[PreSeq]
+[EndPreSeq]
+
+[MainSeq]
+0 A1 inf s1,s2,s3,s4,s5 inf n 0 inf a 1000 A1 n y
+[EndMainSeq]
+
+[PostSeq]
+[EndPostSeq]

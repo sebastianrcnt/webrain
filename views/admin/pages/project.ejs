@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ../partials/head %>
+  <body>
+    <% include ../partials/navbar %>
+    <div class="px-3 pb-6">
+      <div class="container">
+        <h1 class="title">프로젝트 수정</h1>
+        <form action="/admin/projects/<%= project.id %>" method="POST" enctype="multipart/form-data"> 
+          <div class="columns">
+            <label for="name" class="column">
+              프로젝트 ID
+              <input
+                type="text"
+                class="input"
+                value="<%= project.id %>"
+                name="name"
+                disabled
+              />
+            </label>
+          </div>
+          <div class="columns">
+            <label for="name" class="column">
+              프로젝트명
+              <input
+                type="text"
+                class="input"
+                value="<%= project.name %>"
+                name="name"
+                id=""
+              />
+            </label>
+          </div>
+          <div class="columns">
+            <label for="name" class="column">
+              프로젝트 소유자
+              <input
+                type="text"
+                class="input"
+                value="<%= project.User.name %>(<%= project.User.email %>)"
+                name="name"
+                id=""
+                disabled
+              />
+            </label>
+          </div>
+          <div class="columns">
+            <label for="" class="column is-desktop">
+              프로젝트 설명
+              <textarea name="description" class="textarea">
+<%= project.description %></textarea
+              >
+            </label>
+          </div>
+          <div>커버 이미지 업로드</div>
+          <img src="/uploads/<%= project.coverFileId %>" alt="이미지가 업로드되지 않았습니다">
+          <div class="file has-name">
+            <label class="file-label">
+              <input class="file-input" type="file" name="cover" accept=".png,.jpg,.jpeg,.svg" />
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label"> 이미지 고르기 </span>
+              </span>
+              <span class="file-name"> </span>
+            </label>
+          </div>
+          <div class="columns">
+            <label for="" class="column is-desktop">
+              연구 동의서
+              <textarea name="agreement" class="textarea">
+<%= project.agreement %></textarea
+              >
+            </label>
+          </div>
+          <% const myExperiments = experiments.filter(e => e.User.email ===
+          loggedInUser.email) %> <% const projectExperimentIds =
+          project.Experiment.map(e => e.id) %> <% const unSelectedExperiments =
+          myExperiments.filter(e => !projectExperimentIds.includes(e.id)) %>
+          <h2>등록된 실험</h2>
+          <table
+            class="table is-bordered is-hoverable is-fullwidth has-text-centered"
+            id="experiments"
+          >
+            <thead>
+              <tr>
+                <th>실험명</th>
+                <th>소유자</th>
+                <th>액션</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for( let experiment of project.Experiment ) { %>
+              <tr>
+                <td>
+                  <a href="/admin/experiments/<%= experiment.id %>">
+                    <%= experiment.name %></td>
+                  </a>
+                <td>
+                  <a href="/admin/users/<%= experiment.User.email %>">
+                    <%= experiment.User.name %>
+                  </a>
+                </td>
+                <td>
+                  <span
+                    data-experiment-id="<%= experiment.id %>"
+                    class="button py-0 is-danger disconnect-experiment-to-project"
+                  >
+                    제거
+                  </span>
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+          <h2>등록되지 않은 실험</h2>
+          <table
+            class="table is-bordered is-hoverable is-fullwidth has-text-centered"
+            id="unselected-experiments"
+          >
+            <thead>
+              <tr>
+                <th>실험명</th>
+                <th>소유자</th>
+                <th>액션</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for( let experiment of unSelectedExperiments ) { %>
+              <tr>
+                <td>
+                  <a href="/admin/experiments/<%= experiment.id %>">
+                    <%= experiment.name %></td>
+                  </a>
+                <td>
+                  <a href="/admin/users/<%= experiment.User.email %>">
+                    <%= experiment.User.name %>
+                  </a>
+                </td>
+                <td>
+                  <span
+                    data-experiment-id="<%= experiment.id %>"
+                    class="button py-0 is-success connect-experiment-to-project"
+                  >
+                    추가
+                  </span>
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+          <h2>공개여부</h2>
+          <div class="select">
+            <select name="public">
+              <option value="1" <%= project.public == 0 ? '' : 'selected' %>>공개</option>
+              <option value="0" <%= project.public == 0 ? 'selected' : '' %>>비공개</option>
+            </select>
+          </div>
+
+          <div class="row mt-3">
+            <button type="submit" class="button is-success is-pulled-right">저장하기</button>
+            <button type="button" id="delete" class="button is-danger is-pulled-right mr-2">삭제하기</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(() => {
+      $("#experiments").DataTable();
+      $("#unselected-experiments").DataTable();
+      $("span.connect-experiment-to-project").on("click", (event) => {
+        const currentProjectId = "<%= project.id %>";
+        const targetExperimentId = $(event.target).attr("data-experiment-id");
+        $.ajax({
+          method: "get",
+          url: `/api/process/connect-experiment-to-project?experimentId=${targetExperimentId}&projectId=${currentProjectId}`,
+        })
+          .done(() => {
+            window.location.reload();
+          })
+          .fail(() => {
+            alert("실패하였습니다");
+          })
+          .always((result) => {
+            console.log(result);
+          });
+      });
+      $("span.disconnect-experiment-to-project").on("click", (event) => {
+        const currentProjectId = "<%= project.id %>";
+        const targetExperimentId = $(event.target).attr("data-experiment-id");
+        console.log(event.target);
+        $.ajax({
+          method: "get",
+          url: `/api/process/disconnect-experiment-to-project?experimentId=${targetExperimentId}&projectId=${currentProjectId}`,
+        })
+          .done(() => {
+            window.location.reload();
+          })
+          .fail(() => {
+            alert("실패하였습니다");
+          })
+          .always((result) => {
+            console.log(result);
+          });
+      });
+
+      $('#delete').on('click', () => {
+        $.ajax({
+          method: "delete",
+          url: "/admin/projects/<%= project.id %>"
+        }).then(() => {
+          alert('삭제되었습니다.')
+          window.location.href = "/admin/projects"
+        }).catch(() => {
+          alert('삭제에 실패했습니다')
+        }).always((response) => {
+          console.log(response)
+        })
+      })
+    });
+  </script>
+</html>

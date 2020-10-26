@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ../partials/head %>
+  <body>
+    <% include ../partials/navbar %>
+    <div class="px-3 pb-6">
+      <div class="container">
+        <h1 class="title">게임 생성</h1>
+        <form action="/admin/results" method="POST">
+          <div class="columns">
+            <label for="" class="column is-desktop">
+              게임 대상자<br>
+              <select size="1" width="1" name="user" class="mt-2" id="target-user" style="width: 100%;">
+                <% for (let user of users) { %>
+                  <option value="<%= user.email %>"><%= user.name %> (<%= user.email %>)</option>
+                <% } %>
+              </select>
+          </div>
+          <div class="columns">
+            <label for="" class="column is-desktop">
+              프로젝트<br>
+              <select size="1" width="1" name="project" class="mt-2" id="target-project" style="width: 100%;">
+                <% for (let project of projects) { %>
+                  <option value="<%= project.id %>"><%= project.name %> (<%= project.id %>)</option>
+                <% } %>
+              </select>
+          </div>
+          <div class="row mt-3">
+            <button type="submit" class="button is-success is-pulled-right">
+              저장하기
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(() => {
+      $('#target-user').select2();
+      $('#target-project').select2();
+      $('#target-experiment').select2();
+    });
+  </script>
+</html>

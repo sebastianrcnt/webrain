@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ../partials/head %>
+  <body>
+    <% include ../partials/navbar %>
+    <div class="px-3">
+      <section>
+        <!-- Project -->
+        <div class="card px-3 py-3">
+          <table class="table is-fullwidth has-text-centered" id="projects-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>참여자</th>
+                <th>프로젝트</th>
+                <th>실험</th>
+                <th>액션</th>
+              </tr>
+            </thead>
+            <tbody class="is-vcentered">
+              <% for( let result of results ) { %>
+              <tr>
+                <td><%= result.id %></td>
+                <td>
+                  <a href="/admin/users/<%= result.User.email %>">
+                    <%= result.User.name %>
+                  </a>
+                </td>
+                <td>
+                  <a href="/admin/projects/<%= result.Project.id %>">
+                    <%= result.Project.name %>
+                  </a>
+                </td>
+                <td>
+                  <a href="/admin/experiments/<%= result.Experiment.id %>">
+                    <%= result.Experiment.name %>
+                  </a>
+                </td>
+                <td>
+                  <a href="/api/download/game/<%= result.id %>"class="button is-primary is-small is-centered"> <i class="fa fa-download mr-1"></i>결과다운(json) </a>
+                  <a href="/game/<%= result.id %>" class="button is-success is-small is-centered"> <i class="fa fa-link mr-1"></i>실험링크 </a>
+                  <button data-result-id="<%= result.id %>" type="button" class="button delete-result-button is-danger is-small is-centered"><i class="fa fa-trash mr-1"></i>삭제</button>
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+            <tfoot>
+              <a href="/admin/results/new" class="button is-primary is-pulled-right mr-2 mb-6">
+                게임 생성하기
+              </a>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    $(".delete-result-button").on("click", (event) => {
+      const resultId = $(event.target).attr("data-result-id")
+      $.ajax({ method: "delete", url: `/admin/results/${resultId}` })
+        .done(() => {
+          alert("성공적으로 삭제되었습니다")
+        })
+        .fail(() => {
+          alert("삭제에 실패하였습니다")
+        })
+        .always((result) => {
+          window.location.reload()
+        })
+    })
+  </script>
+</html>

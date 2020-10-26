@@ -1,0 +1,224 @@
+/* header */
+
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic&family=Noto+Sans+KR:wght@300;500;700&family=Raleway:wght@200;400&display=swap");
+html,
+body {
+  width: 100%;
+}
+
+body * {
+  font-family: "Raleway", "Noto Sans KR", "Nanum Gothic", sans-serif;
+  font-weight: 200;
+}
+
+.main-header {
+  height: 5rem;
+  /* background: #65C7F7; */
+  /* background: #409EFF; */
+  background: #1e7884;
+  /* background: #0b5963; */
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > h1 > a {
+  color: #6bcad6;
+  font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+.logo .name {
+  color: #fff;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.menu-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.sub-menu {
+  display: flex;
+}
+
+.sub-menu > li {
+  margin-left: 10px;
+}
+
+.sub-menu > li > a {
+  color: #6bcad6;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+.sub-menu > li > a:hover {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu > li {
+  margin-left: 3rem;
+  min-width: 100px;
+  min-height: 30px;
+  line-height: 30px;
+}
+
+.main-menu > li > a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.main-menu-child {
+  background: #1e7884;
+  padding-top: 0.7rem;
+  position: absolute;
+  min-height: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  display: none;
+  z-index: 99;
+}
+
+.main-menu-child > li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #333;
+}
+
+.main-menu-child > li > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.main-menu-child > li > a:hover {
+  background: #1e7884;
+}
+
+/* footer */
+
+.main-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #333;
+}
+
+.main-footer .info {
+  margin-bottom: 0.5rem;
+}
+
+.main-footer .info a {
+  font-family: "Arial";
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid #aaa;
+}
+
+.main-footer .info a:last-child {
+  border: none;
+}
+
+.main-footer .info a:hover {
+  color: #fff;
+}
+
+.main-footer .copy {
+  color: #606266;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (max-width: 1023px) {
+  .main-header {
+    padding-right: 3%;
+    position: fixed;
+    width: 92%;
+    z-index: 999;
+  }
+  .mobile-menu-trigger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .mobile-menu-trigger > i {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .menu-wrap {
+    position: fixed;
+    padding: 2% 2% 2% 0px;
+    right: 0;
+    top: 5rem;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    min-width: 5rem;
+    justify-content: flex-start;
+  }
+  .main-menu {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .main-menu > li {
+    margin-bottom: 1rem;
+  }
+  .main-menu > li > a {
+    text-align: right;
+  }
+  .main-menu-child {
+    position: static;
+    padding: 0;
+    background: none;
+  }
+  .main-menu-child > li {
+    background: none;
+  }
+  .main-menu-child > li > a {
+    text-align: right;
+    color: #aaa;
+  }
+  .main-menu-child > li > a:hover {
+    background: none;
+  }
+  .main-footer .info a {
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 769px) {
+}

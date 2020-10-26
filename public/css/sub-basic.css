@@ -1,0 +1,211 @@
+@media screen and (min-width: 1208px) {
+  /*list-content-section*/
+  .list-content-pagination {
+    width: 80em;
+    margin: 0 auto;
+  }
+  .list-content-section {
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+  }
+  .list-content-header {
+    height: 120px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .list-content-header > h2 {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .list-content-header > h2 > span {
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    color: #ccc;
+  }
+  .list-content-header-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-content-header-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: 100px;
+    border-radius: 20px;
+    margin-right: 15px;
+    border: 1px solid #dfdfdf;
+  }
+  .list-content-header-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .list-content-header-active {
+    background: #1e7884;
+    border: none;
+  }
+  .list-content-header-active > a {
+    color: #fff;
+  }
+  .list-content-container {
+    position: relative;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1207px) {
+  .list-content-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  /*list-content-section*/
+  .list-content-section {
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+  }
+  .list-content-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .list-content-header > h2 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 18px;
+    position: relative;
+    top: 1.5rem;
+  }
+  .list-content-header > h2 > span {
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-right: 5px;
+    color: #ccc;
+  }
+  .list-content-header-ul {
+    position: relative;
+    top: -1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-content-header-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: 100px;
+    border-radius: 20px;
+    margin-right: 15px;
+    border: 1px solid #dfdfdf;
+  }
+  .list-content-header-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .list-content-header-active {
+    background: #1e7884;
+    border: none;
+  }
+  .list-content-header-active > a {
+    color: #fff;
+  }
+  .list-content-container {
+    position: relative;
+    padding-top: 20px;
+  }
+  .main-header {
+    padding-right: 3%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .list-content-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  /*list-content-section*/
+  .list-content-section {
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+  }
+  .list-content-header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+  .list-content-header > h2 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  .list-content-header > h2 > span {
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-right: 5px;
+    color: #ccc;
+  }
+  .list-content-header-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .list-content-header-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: 60px;
+    border-radius: 20px;
+    margin-right: 5px;
+    flex-wrap: wrap;
+    border: 1px solid #dfdfdf;
+  }
+  .list-content-header-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+  }
+  .list-content-header-active {
+    background: #1e7884;
+    border: none;
+  }
+  .list-content-header-active > a {
+    color: #fff;
+  }
+  .list-content-container {
+    position: relative;
+  }
+  .main-header {
+    padding-right: 3%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+}

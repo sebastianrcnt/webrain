@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+// table * {
+//   -webkit-user-select: none; /* Safari */
+//   -moz-user-select: none; /* Firefox */
+//   -ms-user-select: none; /* IE10+/Edge */
+//   user-select: none; /* Standard */
+// }
+
+.shadow {
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+}
+
+pre {
+  overflow: scroll;
+  height: 60vh;
+  width: 70vw;
+}
+
+input[disabled] {
+  color: grey;
+  -webkit-text-fill-color: grey;
+}

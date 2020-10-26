@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ../partials/head %>
+  <body>
+    <div id="root" class="expanded">
+      <form action="/admin/login" method="POST" class="login" autocomplete="off">
+        <h1 class="has-text-centered mb-3 is-size-4 has-text-weight-bold">
+          연구자/관리자 로그인
+        </h1>
+        <input name="email" type="email" class="input mb-2" placeholder="이메일" required />
+        <input name="password" type="password" class="input mb-2" placeholder="비밀번호" required />
+        <button class="button is-primary has-text-weight-bold mb-2" type="submit">
+          로그인하기
+        </button>
+        <a href="/admin/register" class="button is-secondary">회원가입</a>
+      </form>
+    </div>
+  </body>
+  <style>
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+    #root {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    form.login {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form.login input {
+      width: 100%;
+    }
+  </style>
+</html>

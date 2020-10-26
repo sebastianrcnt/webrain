@@ -1,0 +1,36 @@
+<html lang="en">
+  <% include ../admin/partials/head %>
+  <body>
+    <div id="root" class="expanded">
+      <form action="/admin/login" method="POST" class="login" autocomplete="off">
+        <h1 class="has-text-centered mb-3 is-size-4 has-text-weight-bold">
+          <%= message %>
+        </h1>
+      </form>
+    </div>
+  </body>
+  <style>
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+    #root {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    form.login {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form.login input {
+      width: 100%;
+    }
+  </style>
+</html>

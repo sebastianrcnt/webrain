@@ -1,0 +1,43 @@
+.color-text-primary {
+  color: #5cd1f2;
+}
+
+.icon-outline {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #5cd1f2;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-brand-detail {
+    font-size: 16px;
+    color: #fff;
+  }
+  .section-heading > .emp {
+    padding-top: 20px;
+    padding-left: 25px;
+    background: url("../img/main/heading-bg.png") no-repeat left top;
+  }
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .nav-brand-detail {
+    font-size: 16px;
+    color: #333;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-brand-detail {
+    font-size: 16px;
+    color: #333;
+  }
+  .desktop-only {
+    display: none;
+  }
+}

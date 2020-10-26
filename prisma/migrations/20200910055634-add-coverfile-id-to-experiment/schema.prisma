@@ -1,0 +1,60 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = "***"
+}
+
+model Experiment {
+  id          String    @default("unset") @id
+  userEmail   String?
+  name        String    @default("unset")
+  description String?
+  fileId      String    @default("unset")
+  fileName    String?
+  json        String?   @default("{}")
+  User        User?     @relation(fields: [userEmail], references: [email])
+  Result      Result[]
+  Project     Project[]
+  tags        String?
+  coverFileId String?
+}
+
+model User {
+  email      String       @default("unset@monet.com") @id
+  name       String       @default("unset")
+  phone      String?
+  password   String?      @default("unset")
+  level      Int          @default(0)
+  Experiment Experiment[]
+  Project    Project[]
+  Result     Result[]
+}
+
+model Project {
+  id          String       @default("unset") @id
+  description String?
+  agreement   String?
+  public      Int          @default(0)
+  userEmail   String?
+  name        String?
+  User        User?        @relation(fields: [userEmail], references: [email])
+  Result      Result[]
+  Experiment  Experiment[]
+  coverFileId String?
+}
+
+model Result {
+  experimentId String?
+  projectId    String?
+  timestamp    String?
+  id           String      @default("unset") @id
+  done         Int         @default(0)
+  userEmail    String?
+  json         String?     @default("{}")
+  Experiment   Experiment? @relation(fields: [experimentId], references: [id])
+  Project      Project?    @relation(fields: [projectId], references: [id])
+  User         User?       @relation(fields: [userEmail], references: [email])
+}

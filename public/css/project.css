@@ -1,0 +1,341 @@
+.list-content-container {
+  width: 100%;
+}
+
+.list-content-thumbnail {
+  display: flex;
+  width: 80em;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.list-content-thumbnail > li {
+  position: relative;
+  width: 24%;
+  margin-bottom: 5rem;
+  margin-left: 4rem;
+  margin-right: 3rem;
+}
+
+.list-content-thumbnail > li > a {
+  display: block;
+}
+
+.list-content-thumbnail-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.list-content-thumbnail-title .item-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.list-content-thumbnail-title .item-text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 0.5rem;
+  color: #aaa;
+  padding-bottom: 0.5rem;
+}
+
+.list-content-thumbnail-title .list-over {
+  color: #f56c6c !important;
+  font-weight: 500;
+}
+
+/* 완료된 프로젝트 클래스*/
+
+.completed img,
+.completed-tr img {
+  opacity: 0.7;
+}
+
+.completed-img {
+  position: absolute;
+  top: -25px;
+  right: -30px;
+  width: 70px;
+  opacity: 1;
+}
+
+/* 
+.completed-ct {
+    background: url('/images/completed.png') no-repeat center 70px #fff;
+    background-size: 70px;
+}
+
+.completed {
+    background: url('/images/completed.png') no-repeat right 5px #fff;
+    background-size: 70px;
+} */
+
+/* 잠긴 프로젝트 */
+
+.locked:hover img {
+  opacity: 0.3;
+}
+
+.locked:hover {
+  background: url("/images/lock.png") no-repeat center 70px;
+  background-size: 70px;
+}
+
+.locked-tr:hover {
+  background: url("/images/lock.png") no-repeat right 5px;
+  background-size: 70px;
+}
+
+.completed {
+  z-index: -1;
+}
+
+.pageOption {
+  overflow: hidden;
+  position: relative;
+  width: 19.5em;
+  height: 13.1em;
+}
+
+.option,
+.option img {
+  width: 100%;
+  height: 100%;
+}
+
+.option {
+  overflow: hidden;
+  position: absolute;
+  /* arctan(27 / 40) = 34.01935deg 
+ * need to skew by 90deg - 34.01935deg = 55.98065deg
+*/
+  transform: skewX(-55.98deg);
+}
+
+.option:first-child {
+  left: -0.25em;
+  transform-origin: 100% 0;
+}
+
+.option:last-child {
+  right: -0.25em;
+  transform-origin: 0 100%;
+}
+
+.option img {
+  transform: skewX(55.98deg);
+  transform-origin: inherit;
+}
+
+/* 하단 테이블 */
+
+.list-table-container {
+  display: grid;
+  margin: 0 auto;
+  width: 80rem;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 3fr;
+}
+
+.list-table-container .not-done {
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+.list-table-container .done {
+  margin-right: 3%;
+}
+
+.list-table-container h3 {
+  text-indent: 0.3rem;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.list-table-container h3 > i {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  color: #1e7884;
+}
+
+.list-table-container .list-table {
+  border-collapse: collapse;
+  border-radius: 7px;
+  width: 100%;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+
+.list-table-container .list-table td,
+.list-table-container .list-table th {
+  border: 1px solid #efefef;
+  border-right: none;
+  border-left: none;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.8rem;
+}
+
+.list-table tr:nth-child(2n) td {
+  background: #fafafa;
+}
+
+.list-content-header {
+  height: 120px;
+  display: flex;
+  width: 80rem;
+  padding-left: 4rem;
+  padding-right: 3rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1001px) {
+  .list-content-header {
+    height: 120px;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    justify-content: space-between;
+  }
+  .list-content-thumbnail {
+    width: 100%;
+  }
+  .list-content-thumbnail > li {
+    width: 25%;
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .pageOption {
+    overflow: hidden;
+    position: relative;
+    width: 17.5em;
+    height: 12.1em;
+  }
+  .list-table-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .list-table-container .not-done {
+    margin-left: 0;
+    margin-right: 0;
+    width: 95%;
+  }
+  .list-table-container .done {
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrap-all {
+    overflow: hidden;
+  }
+  .list-content-section {
+    margin-top: 6rem;
+  }
+  .list-content-header {
+    height: 120px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .list-content-header-ul {
+    position: relative;
+    top: -2rem;
+  }
+  .list-content-thumbnail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .list-content-thumbnail > li {
+    margin: 0 auto;
+    position: relative;
+  }
+  .pageOption {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 21.5em;
+    height: 14.6em;
+  }
+  .item-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .list-content-thumbnail-title .item-text {
+    display: none;
+  }
+  .list-table-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .list-table-container .not-done {
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%;
+  }
+  .list-table-container .done {
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .list-table-container .list-table td,
+  .list-table-container .list-table th {
+    font-size: 0.7rem;
+  }
+  .not-done .list-table td:nth-child(1) {
+    text-align: left;
+    text-indent: 1rem;
+  }
+  .completed-img {
+    position: absolute;
+    top: -25px;
+    right: -30px;
+    width: 70px;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 998px) and (min-width: 901px) {
+  /* 
+    .completed {
+        background: url('/images/completed.png') no-repeat center top;
+        background-size: 70px;
+    } */
+}
+
+@media screen and (max-width: 900px) and (min-width: 508px) {
+  /* .completed {
+        background: url('/images/completed.png') no-repeat center 0%;
+        background-size: 40%;
+    } */
+}

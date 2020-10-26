@@ -1,0 +1,5 @@
+const ADMINISTRATOR = 200;
+const RESEARCHER = 100;
+const SUBJECT = 0;
+
+module.exports = { ADMINISTRATOR, RESEARCHER, SUBJECT };

@@ -1,0 +1,63 @@
+.
+├── app.js
+├── bin
+│   └── www
+├── controllers
+│   ├── experiments.js
+│   ├── projects.js
+│   ├── readfile.js
+│   ├── render.js
+│   └── users.js
+├── database.db
+├── html
+│   └── home.html
+├── json
+│   └── result.json
+├── levels
+│   └── levels.js
+├── middlewares
+│   ├── error.js
+│   ├── filter-access.js
+│   └── user.js
+├── package-lock.json
+├── package.json
+├── parser
+│   ├── exp.txt
+│   ├── main.js
+│   ├── parser.js
+│   └── parser.ts
+├── prisma
+│   ├── migrations
+│   └── schema.prisma
+├── providers
+│   ├── experiments.js
+│   ├── home.js
+│   ├── index.js
+│   ├── projects.js
+│   ├── results.js
+│   └── users.js
+├── public
+│   ├── css
+│   ├── favicon.ico
+│   ├── js
+│   ├── lib
+│   └── vendor
+├── routes
+│   ├── admin
+│   ├── api
+│   ├── game
+│   ├── index.js
+│   └── main
+├── services
+│   ├── experiments.js
+│   └── users.js
+├── uploads
+└── views
+    ├── admin
+    ├── error.ejs
+    ├── game
+    ├── index.ejs
+    ├── main
+    └── utils
+
+27 directories, 34 files

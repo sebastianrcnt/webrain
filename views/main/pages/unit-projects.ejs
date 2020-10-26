@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="/css/list2.css" />
+
+  <body>
+    <div class="wrap-all">
+      <% include ../partials/header %>
+      <!-- Games -->
+      <section class="list-content-section">
+        <div class="list-content-header">
+          <h2><span>MoNET</span>Experiment</h2>
+        </div>
+        <style>
+          .image-container img {
+            object-fit: cover;
+          }
+        </style>
+        <div class="list-content-container">
+          <h3><i class="fas fa-list"></i>유닛프로젝트 목록</h3>
+          <ul class="list-content-thumbnail">
+            <% for (let unitProject of unitProjects) { %>
+            <li>
+              <a href="/main/unit-project/<%= unitProject.id %>" class="list-link">
+                <span class="image-container">
+                  <img src="/uploads/<%= unitProject.coverFileId %>" alt="any" />
+                </span>
+                <span class="list-content-thumbnail-title">
+                  <span class="item-title"><%= unitProject.name %> </span>
+                  <span class="item-text"><%= unitProject.description %></span>
+                </span>
+              </a>
+            </li>
+            <% } %>
+          </ul>
+        </div>
+      </section>
+      <!-- login contents end -->
+      <% include ../partials/footer %>
+    </div>
+  </body>
+</html>

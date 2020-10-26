@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="../css/list.css" />
+
+  <body>
+    <div class="wrap-all">
+      <% include ../partials/header %>
+      <section class="list-content-section">
+        <div class="list-content-header">
+          <h2><span>MoNET</span>Experiments</h2>
+          <ul class="list-content-header-ul">
+            <li class="list-content-header-item list-content-header-active">
+              <a href="#">type1</a>
+            </li>
+            <li class="list-content-header-item">
+              <a href="#">type2</a>
+            </li>
+            <li class="list-content-header-item">
+              <a href="#">type2</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Games -->
+        <% const myGames= results.filter(result=> result.User.email == loggedInUser.email) %>
+        <!-- Games Incompleted -->
+        <% const incompletedGames = myGames.filter(game => game.json == "{}") %>
+        <!-- Games Completed -->
+        <% const completedGames = myGames.filter(game => game.json != "{}") %>
+
+        <div class="list-content-container">
+          <h3><i class="fas fa-list"></i>전체 게임 리스트</h3>
+          <ul class="list-content-thumbnail list-yet">
+            <!-- SAMPLE -->
+            <li>
+              <% for( let game of myGames ) { %>
+              <a href="/main/game/<%= game.id %>" class="list-link">
+                <span class="list-content-thumbnail-title">
+                  <span class="item-title"><%- game.Experiment.name %></span>
+                  <span class="item-text"><%- game.Project.name %></span>
+                </span>
+              </a>
+              <% } %>
+            </li>
+          </ul>
+
+          <h3><i class="fas fa-list"></i>완료 게임 리스트</h3>
+          <ul class="list-content-thumbnail list-done">
+            <li>
+              <% for( let game of completedGames ) { %>
+              <a href="/main/game/<%= game.id %>" class="list-link">
+                <span class="list-content-thumbnail-title">
+                  <span class="item-title"><%- game.Experiment.name %></span>
+                  <span class="item-text"><%- game.Project.name %></span>
+                </span>
+              </a>
+              <% } %>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- login contents end -->
+      <footer class="main-footer">
+        <div class="info">
+          <a href="#">연세대학교</a>
+          <a href="tel:020000000">T 02. 000. 0000 </a>
+          <a href="#">F 02. 000. 0000 </a>
+          <a href="#">개인정보취급방침</a>
+        </div>
+        <div class="copy">Copyright MoNET. Lab, Yonsei University All Rights Reserved</div>
+      </footer>
+      <script src="../js/basic.js" defer></script>
+      <script src="../js/list.js" defer></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="/css/list2.css" />
+
+  <body>
+    <div class="wrap-all">
+      <% include ../partials/header %>
+      <!-- Games -->
+      <% const myGames= results.filter(result=> result.User.email == loggedInUser.email) %>
+      <!-- Games Incompleted -->
+      <% const incompletedGames = myGames.filter(game => game.json == "{}") %>
+      <!-- Games Completed -->
+      <% const completedGames = myGames.filter(game => game.json != "{}") %>
+      <section class="list-content-section">
+        <div class="list-content-header">
+          <h2><span>MoNET</span>Experiment</h2>
+          <!-- <ul class="list-content-header-ul">
+                    <li class="list-content-header-item list-content-header-active">
+                        <a href="#">type1</a>
+                    </li>
+                    <li class="list-content-header-item">
+                        <a href="#">type2</a>
+                    </li>
+                    <li class="list-content-header-item">
+                        <a href="#">type2</a>
+                    </li>
+                </ul> -->
+        </div>
+        <style>
+          .image-container img {
+            object-fit: cover;
+          }
+        </style>
+        <div class="list-content-container">
+          <h3><i class="fas fa-list"></i>전체 리스트</h3>
+          <ul class="list-content-thumbnail">
+            <% for (let game of myGames) { %>
+            <li>
+              <a href="/main/game/<%= game.id %>" class="list-link">
+                <span class="image-container">
+                  <img src="/uploads/<%= game.Experiment.coverFileId %>" alt="any" />
+                </span>
+                <span class="list-content-thumbnail-title">
+                  <span class="item-title"><%= game.Experiment.name %> </span>
+                  <span class="item-text"><%= game.Project.name %></span>
+                </span>
+              </a>
+            </li>
+            <% } %>
+          </ul>
+
+          <div class="image-cover">
+            <div class="image-cover-content">
+              <span class="title"></span>
+              <span class="icon"><i class="fa fa-search"></i></span>
+            </div>
+          </div>
+
+          <div class="list-content-done-not-done">
+            <div class="not-done">
+              <h3><i class="fas fa-seedling"></i>미완료 게임</h3>
+              <ul class="list-content-thumbnail">
+                <% for (let game of incompletedGames) { %>
+                <li>
+                  <a href="/main/game/<%= game.id %>" class="list-link">
+                    <span class="list-content-thumbnail-title">
+                      <span class="item-title"><%= game.Experiment.name %></span>
+                      <span class="item-text"><%= game.Project.name %></span>
+                    </span>
+                    <span class="image-container">
+                      <img src="/uploads/<%= game.Experiment.coverFileId %>" alt="any" />
+                    </span>
+                  </a>
+                  <span class="icon-container">
+                    <a href="#"><i class="fas fa-caret-square-right"></i></a>
+                  </span>
+                </li>
+                <% } %>
+              </ul>
+            </div>
+            <div class="done">
+              <h3><i class="fas fa-award"></i>완료 게임</h3>
+              <ul class="list-content-thumbnail">
+                <% for (let game of completedGames) { %>
+                <li>
+                  <a href="/main/game/<%= game.id %>" class="list-link">
+                    <span class="list-content-thumbnail-title">
+                      <span class="item-title"><%= game.Experiment.name %></span>
+                      <span class="item-text"><%= game.Project.name %></span>
+                    </span>
+                    <span class="image-container">
+                      <img src="/uploads/<%= game.Experiment.coverFileId %>" alt="any" />
+                    </span>
+                  </a>
+                  <span class="icon-container">
+                    <a href="#"><i class="fas fa-caret-square-right"></i></a>
+                  </span>
+                </li>
+                <% } %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- login contents end -->
+      <% include ../partials/footer %>
+    </div>
+  </body>
+</html>

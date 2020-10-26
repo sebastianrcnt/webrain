@@ -1,0 +1,299 @@
+.list-content-container * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rank {
+  color: #409eff;
+  font-weight: bold;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.result-info-wrap-title {
+  background: #fff;
+  background: #1e7884;
+  color: #fff;
+  font-weight: normal;
+  border-radius: 7px;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  width: 160px;
+  margin: 0 auto;
+  margin-left: 15%;
+  margin-bottom: 1.5rem;
+}
+
+.result-info-wrap {
+  border: 1px solid #efefef;
+  border-radius: 7px;
+  padding: 20px;
+  padding-top: 30px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.result-info-wrap .title {
+  min-width: 140px;
+  height: 30px;
+  color: #ccc;
+}
+
+.result-detail-wrap {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.list1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  border: 1px solid #efefef;
+  padding-top: 2rem;
+}
+
+.list1-only {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  border: 1px solid #efefef;
+  padding-top: 2rem;
+}
+
+.list1 .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #efefef;
+}
+
+.list1 .profile .profile-image {
+  border-radius: 100%;
+  overflow: hidden;
+  border: 2px solid #efefef;
+}
+
+.list1 .profile .profile-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.list1 .profile .profile-name {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.list1 .brief {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+}
+
+.list1 .brief > li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.brief .title {
+  font-size: 1.3rem;
+}
+
+.brief .label {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.list1 .graph {
+  padding: 2rem;
+}
+
+.list1 .graph p {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  text-indent: 1rem;
+}
+
+.list1 .graph p span {
+  color: #409eff;
+}
+
+#myChart {
+  min-height: 150px;
+  width: 100%;
+  height: 100%;
+}
+
+.list2 {
+  width: 58%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  /* justify-content: stretch; */
+  border: 1px solid #efefef;
+  padding: 2rem;
+  border-radius: 7px;
+}
+
+.go-for-another-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-for-another-game i {
+  font-size: 60px;
+  margin-bottom: 1.5rem;
+  color: #409eff;
+  cursor: pointer;
+}
+
+.go-for-another-game i:hover {
+  color: #f56c6c;
+}
+
+.list2 .progress-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list2 .progress-wrap li {
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list2 .progress-wrap li > p {
+  width: 10%;
+}
+
+.progress {
+  width: 90%;
+  display: flex;
+}
+
+.progress-info {
+  margin-bottom: 2rem;
+}
+
+.progress-info p {
+  font-size: 1.5rem;
+}
+
+.progress-info span {
+  color: #409eff;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.button-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.button-wrap .btn {
+  border-radius: 7px;
+  padding: 13px 20px;
+  background: #409eff;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-wrap .btn > i {
+  margin-right: 1rem;
+}
+
+.button-wrap .btn:hover {
+  background: #f56c6c;
+}
+
+@media screen and (min-width: 1208px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1207px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 1210px) {
+  .wrap-all {
+    overflow: hidden;
+  }
+  .list-content-section {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .result-info-wrap-title {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .result-info-wrap {
+    border: 1px solid #efefef;
+    border-radius: 7px;
+    padding: 20px;
+    padding-top: 30px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .result-detail-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .list1 {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .list2 {
+    width: 100%;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .list2 .progress-wrap li > p {
+    width: 20%;
+    font-size: 0.8rem;
+  }
+  .progress {
+    width: 80%;
+    display: flex;
+  }
+  .progress-info p {
+    font-size: 1.2rem;
+  }
+  .list1 .graph p {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    text-indent: 1rem;
+    line-height: 1.5rem;
+    word-break: keep-all;
+  }
+}

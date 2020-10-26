@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoNET</title>
+
+    <!-- jquery -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/global.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Custom fonts -->
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.css" />
+    <!-- 기본 css -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/basic.css" />
+    <link rel="stylesheet" href="/css/sub-basic.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <!-- page css -->
+
+    <link rel="stylesheet" href="/css/initial.css" />
+  </head>
+
+  <body>
+    <div class="wrap-all">
+      <% include ../partials/header %> <% const game = result; %>
+      <section class="section section-1">
+        <div class="image"></div>
+        <div class="instruction">
+          <p class="title"><%= game.Experiment.name %></p>
+          <p class="text"><%= game.Experiment.description %></p>
+          <p class="text"><%= game.Project.agreement %></p>
+          <a href="/game/<%= game.id %>"><button class="btn">동의하고 시작하기</button></a>
+        </div>
+      </section>
+      <% include ../partials/footer %>
+    </div>
+    <!-- script jquery link -->
+    <script src="../js/basic.js"></script>
+  </body>
+</html>
