@@ -49,10 +49,19 @@ app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get("env") === "development" ? err : {};
+  console.error(err);
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render("error");
+  if (err.intended) {
+    res.status(401).render("utils/message", {
+      message: err.message,
+    });
+  } else {
+    // with debug option?
+    res.status(500).render("error", {
+      message: "알 수 없는 오류가 발생했습니다.",
+      err,
+    });
+  }
 });
 
 module.exports = app;
