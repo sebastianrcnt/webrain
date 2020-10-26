@@ -14,15 +14,6 @@
             object-fit: contain;
           }
         </style>
-        <% const myGames = results.filter((result) => { return result.User.email
-        === loggedInUser.email }) %> <% projects = projects.filter((project) =>
-        { // 1. filter projects that are included in at least one of myGames.
-        return !!myGames.filter((game) => game.Project.id ===
-        project.id).length; }) projects = projects.filter((project) => { // 2.
-        filter projects that are included in specific unitProject. const b2 =
-        !!unitProject.Project.filter((proj) => { return proj.id === project.id
-        }).length console.log(project.unitProjectId, unitProject.id) return
-        project.unitProjectId === unitProject.id }) %>
         <div class="list-content-container">
           <h3>
             <i class="fas fa-list"></i><%= unitProject.name %>(<%=

@@ -201,31 +201,4 @@ ApiRouter.post("/email", (req, res) => {
   }
 });
 
-const multer = require("multer");
-
-const experimentZipUploader = multer({
-  dest: "uploads/etc/",
-}).single("zip");
-
-// const identifyExperiment = (req, res, next) => {
-//   // first, check if experiment exists.
-//   // PUT /api/alter-experiment-file?experimentId=sb0xQwo6_
-//   prisma.experiment
-//     .findOne({ where: { id: req.query.experimentId } })
-//     .then((experiment) => {
-//       if (experiment) {
-//         req.fileId = experiment.fileId
-//         next()
-//       } else {
-//         res.status(404).send()
-//       }
-//     })
-//     .catch(respondWithError(res))
-// }
-
-ApiRouter.post("/alter-experiment-file", experimentZipUploader, (req, res) => {
-  console.log(req.file);
-  res.send("test 1");
-});
-
 module.exports = ApiRouter;

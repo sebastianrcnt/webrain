@@ -64,7 +64,15 @@ MainRouter.get(
     UnitProjectsProvider.provideOneById(),
     ProjectsProvider.provideAll(),
     ResultsProvider.provideAll(),
-    RenderControllers.render("main/pages/unit-project")
+    (req, res) => {
+      // 유닛프로젝트 내부 프로젝트 중 내가 속한 프로젝트가 있는 것 분류
+      console.log(req.context);
+      let projects = req.context.projects.filter(
+        (project) => project.User.email === req.user.email
+      );
+      req.context = { ...req.context };
+      res.render("main/pages/unit-project", req.context);
+    }
   )
   .get("/login", (req, res) => {
     if (req.user) {

@@ -12,15 +12,23 @@ exports.createExperiment = async (req, res, next) => {
   const zipFile = req.files["zip"][0];
 
   try {
+    console.log(zipFile);
     // extract
+    let sourcedir = path.join(
+      path.resolve(zipFile.destination),
+      "source_" + zipFile.filename
+    );
+
+    fs.mkdirSync(sourcedir); // make directory /uploads/source_[experimentid]
+
     await extract(zipFile.path, {
-      dir: path.resolve(zipFile.destination),
+      dir: sourcedir,
     });
 
     // read data
     const data = fs.readFileSync(
       path.join(
-        path.resolve(zipFile.destination), // /uploads
+        sourcedir,
         path.parse(zipFile.originalname).name, // name = 1_lake_nback_i
         "exp.txt"
       ),
@@ -76,13 +84,25 @@ exports.updateExperiment = async (req, res, next) => {
   // if we need to update zipFile, do the work
   // read data
   if (zipFile) {
+    let sourcedir = path.join(
+      path.resolve(zipFile.destination), // /uploads
+      "source_" + req.params.id // /source_experimentid
+      // experimentId와 초기 업로드시 zipFile.filename이 동일하므로
+      // 이렇게 접근할 수 있다.
+    );
+
+    await extract(zipFile.path, {
+      dir: sourcedir,
+    });
+
     try {
       const data = fs.readFileSync(
         path.join(
-          path.resolve(zipFile.destination), // /uploads
+          sourcedir, // /uploads/experimentId
           path.parse(zipFile.originalname).name, // name = 1_lake_nback_i
           "exp.txt"
         ),
+        // /uploads/experimentId/sample/exp.txt
         "utf-8"
       );
 

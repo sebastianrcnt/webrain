@@ -298,7 +298,7 @@ AdminRouter.get(
   .delete("/unit-project/:id", (req, res) => {
     const { id } = req.params.id;
     prisma.unitProject
-      .delete({ where: { id } })
+      .delete({ where: { id: req.params.id } })
       .then(() => {
         res.status(200).send();
       })

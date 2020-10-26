@@ -4,6 +4,13 @@
   <body>
     <script>
       const gameId = "<%= game.id %>";
+      const experimentId = "<%= game.Experiment.id %>";
+      const experimentFileName = "<%= game.Experiment.fileName %>";
+      const removeExtension = (fileName) =>
+        fileName.split(".").slice(0, -1).join(".");
+      const unzippedFolderUrl = `/uploads/source_${experimentId}/${removeExtension(
+        experimentFileName
+      )}`;
       window.results = {
         startTimeList: [],
         endTimeList: [],
@@ -44,15 +51,20 @@
       };
 
       const imgStimulusHtml = (stimulus) => {
-        return `<img src="/uploads/<%= game.Experiment.id %>/<%= game.Experiment.fileName.split('.').slice(0, -1).join('.') %>/${stimulus.filePath}" >`;
+        const fileName = "";
+        return `<img src="${unzippedFolderUrl}/${stimulus.filePath}" >`;
       };
 
       const audioStimulusHtml = (stimulus) => {
-        return `<audio autoplay><source src="/uploads/<%= game.Experiment.id %>/<%= game.Experiment.fileName.split('.').slice(0, -1).join('.') %>/${stimulus.filePath}"></audio>`;
+        return `<audio autoplay>
+          <source src="${unzippedFolderUrl}/${stimulus.filePath}">
+        </audio>`;
       };
 
       const videoStimulusHtml = (stimulus) => {
-        return `<video autoplay="autoplay"><source src="/uploads/<%= game.Experiment.id %>/<%= game.Experiment.fileName.split('.').slice(0, -1).join('.') %>/${stimulus.filePath}"></video>`;
+        return `<video autoplay="autoplay">
+          <source src="${unzippedFolderUrl}/${stimulus.filePath}">
+        <video>`;
       };
 
       const stimulusHtml = (stimulus) => {
