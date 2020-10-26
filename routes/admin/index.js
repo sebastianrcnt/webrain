@@ -212,9 +212,7 @@ AdminRouter.get(
     ContextProviders.provideUsersContext(),
     ContextProviders.provideProjectsContext(),
     ContextProviders.provideExperimentsContext(),
-    (req, res) => {
-      res.render("admin/pages/result-new", req.context);
-    }
+    RenderControllers.render("admin/pages/result-new")
   )
   .delete("/results/:id", (req, res) => {
     prisma.result

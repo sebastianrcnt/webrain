@@ -225,7 +225,6 @@ const experimentZipUploader = multer({
 
 ApiRouter.post("/alter-experiment-file", experimentZipUploader, (req, res) => {
   console.log(req.file);
-  // console.log(Object.keys(req));
   res.send("test 1");
 });
 
