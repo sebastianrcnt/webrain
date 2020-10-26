@@ -6,87 +6,159 @@
     <div class="px-3 pb-6">
       <div class="container">
         <h1 class="title">실험 상세/수정</h1>
-        <form action="/admin/experiments/<%= experiment.id %>" method="POST" enctype="multipart/form-data">
+        <form
+          action="/admin/experiments/<%= experiment.id %>"
+          method="POST"
+          enctype="multipart/form-data"
+        >
           <div class="columns">
             <label for="name" class="column">
               실험 ID
-              <input type="text" class="input" name="name" id="" value="<%- experiment.id %> " disabled />
+              <input
+                type="text"
+                class="input"
+                name="name"
+                id=""
+                value="<%- experiment.id %> "
+                disabled
+              />
             </label>
           </div>
 
           <div class="columns">
             <label for="name" class="column">
               소유자
-              <input type="text" class="input" name="name" id="" value="<%= experiment.userEmail %>" disabled />
+              <input
+                type="text"
+                class="input"
+                name="name"
+                id=""
+                value="<%= experiment.userEmail %>"
+                disabled
+              />
             </label>
           </div>
 
           <div class="columns">
             <label for="name" class="column">
               실험명
-              <input type="text" class="input" name="name" value="<%- experiment.name %>" id="" />
+              <input
+                type="text"
+                class="input"
+                name="name"
+                value="<%- experiment.name %>"
+                id=""
+              />
             </label>
           </div>
           <div class="columns">
             <label for="" class="column is-desktop">
               실험 설명
-              <textarea name="description" class="textarea"><%- experiment.description %></textarea>
+              <textarea name="description" class="textarea">
+<%- experiment.description %></textarea
+              >
             </label>
           </div>
           <div class="columns">
             <label for="" class="column is-desktop">
               실험 태그
-              <input type="text" class="input" name="tags" id="" value="<%= experiment.tags %>" placeholder="슬래쉬로 구분 ex) 태그1/태그2/태그3" required />
+              <input
+                type="text"
+                class="input"
+                name="tags"
+                id=""
+                value="<%= experiment.tags %>"
+                placeholder="슬래쉬로 구분 ex) 태그1/태그2/태그3"
+                required
+              />
             </label>
           </div>
-          <div>커버 이미지 업로드</div>
-          <img src="/uploads/<%= experiment.coverFileId %>" alt="이미지가 업로드되지 않았습니다">
+          <div>커버 이미지 수정</div>
+          <img
+            src="/uploads/general/<%= experiment.coverFileId %>"
+            alt="이미지가 업로드되지 않았습니다"
+          />
           <div class="file has-name">
             <label class="file-label">
-              <input class="file-input" type="file" name="cover" accept=".png,.jpg,.jpeg,.svg" />
+              <input
+                class="file-input"
+                id="cover-file"
+                type="file"
+                name="cover"
+                accept=".png,.jpg,.jpeg,.svg"
+              />
               <span class="file-cta">
                 <span class="file-icon">
                   <i class="fas fa-upload"></i>
                 </span>
-                <span class="file-label"> 이미지 고르기 </span>
+                <span class="file-label">커버 이미지 업로드</span>
               </span>
-              <span class="file-name"> </span>
+              <span class="file-name" id="cover-file-name"></span>
+              <script>
+                $("input#cover-file").on("change", function (event) {
+                  var i = $(this).prev("label").clone();
+                  var file = $("input#cover-file")[0].files[0].name;
+                  $("#cover-file-name").text(file);
+                });
+              </script>
             </label>
           </div>
-          <div class="columns">
-            <label for="" class="column is-desktop">
-              실험 링크
-              <input class="input" type="text" disabled value="hello world" />
-              <!-- TODO: ADD 실험 링크 -->
-            </label>
-          </div>
-          <div>실험파일</div>
+          <div class="my-2">실험파일 다운로드</div>
           <div class="file has-name">
             <label class="file-label">
-              <!-- <input class="file-input" type="file" name="resume" /> -->
               <span class="file-cta">
                 <span class="file-icon">
                   <i class="fas fa-download"></i>
                 </span>
-                <a href="/uploads/<%= experiment.id %>/<%= experiment.fileName %>" class="file-label"> 파일 다운로드 </a>
+                <a
+                  href="/uploads/<%= experiment.id %>/<%= experiment.fileName %>"
+                  class="file-label"
+                >
+                  실험파일 다운로드
+                </a>
               </span>
               <span class="file-name"> <%= experiment.fileName %> </span>
             </label>
           </div>
-          <div>
-            실험파일 변경하기
+          <div class="my-2">실험파일 수정</div>
+          <div class="file has-name">
+            <label class="file-label">
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <a
+                  href="/uploads/<%= experiment.id %>/<%= experiment.fileName %>"
+                  class="file-label"
+                >
+                  실험파일 업로드
+                </a>
+              </span>
+              <span class="file-name"> <%= experiment.fileName %> </span>
+              <button class="button is-primary ml-2">반영하기</button>
+            </label>
           </div>
-          <!-- 모달 끝 -->
-          <button type="submit" class="button is-success is-pulled-right">저장하기</button>
-          <button id="delete-this-experiment" type="button" class="button is-danger is-pulled-right mr-2">삭제하기</button>
+          <button type="submit" class="button is-success is-pulled-right">
+            저장하기
+          </button>
+          <button
+            id="delete-this-experiment"
+            type="button"
+            class="button is-danger is-pulled-right mr-2"
+          >
+            삭제하기
+          </button>
         </form>
       </div>
     </div>
   </body>
   <script>
     $(document).ready(() => {
-      $("#search-experiments").DataTable()
-      $("#qr").attr("url", "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=somedata")
+      $("#search-experiments").DataTable();
+      $("#qr").attr(
+        "url",
+        "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=somedata"
+      );
       $("#delete-this-experiment").on("click", () => {
         if (confirm("정말로 삭제하시겠습니까?")) {
           $.ajax({
@@ -94,17 +166,17 @@
             method: "DELETE",
           })
             .done(() => {
-              alert("삭제되었습니다.")
-              window.location.href = "/admin/experiments"
+              alert("삭제되었습니다.");
+              window.location.href = "/admin/experiments";
             })
             .fail(() => {
-              alert("삭제에 실패했습니다.")
+              alert("삭제에 실패했습니다.");
             })
             .always((response) => {
-              console.log(response)
-            })
+              console.log(response);
+            });
         }
-      })
-    })
+      });
+    });
   </script>
 </html>
