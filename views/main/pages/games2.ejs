@@ -22,7 +22,8 @@
           </ul>
         </div>
         <!-- Games -->
-        <% const myGames= results.filter(result=> result.User.email == loggedInUser.email) %>
+        <% const myGames= results.filter(result=> result.User.email ==
+        loggedInUser.email) %>
         <!-- Games Incompleted -->
         <% const incompletedGames = myGames.filter(game => game.json == "{}") %>
         <!-- Games Completed -->
@@ -67,7 +68,9 @@
           <a href="#">F 02. 000. 0000 </a>
           <a href="#">개인정보취급방침</a>
         </div>
-        <div class="copy">Copyright MoNET. Lab, Yonsei University All Rights Reserved</div>
+        <div class="copy">
+          Copyright MoNET. Lab, Yonsei University All Rights Reserved
+        </div>
       </footer>
       <script src="../js/basic.js" defer></script>
       <script src="../js/list.js" defer></script>

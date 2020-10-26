@@ -6,7 +6,11 @@
     <div class="px-3 pb-6">
       <div class="container">
         <h1 class="title">단위프로젝트 수정</h1>
-        <form action="/admin/unit-project/<%= unitProject.id %>" method="POST" enctype="multipart/form-data"> 
+        <form
+          action="/admin/unit-project/<%= unitProject.id %>"
+          method="POST"
+          enctype="multipart/form-data"
+        >
           <div class="columns">
             <label for="name" class="column">
               단위프로젝트 ID
@@ -40,10 +44,19 @@
             </label>
           </div>
           <div>커버 이미지 업로드</div>
-          <img src="/uploads/<%= unitProject.coverFileId %>" alt="이미지가 업로드되지 않았습니다">
+          <img
+            src="/uploads/<%= unitProject.coverFileId %>"
+            alt="이미지가 업로드되지 않았습니다"
+          />
           <div class="file has-name">
             <label class="file-label">
-              <input class="file-input" id="cover-file" type="file" name="cover" accept=".png,.jpg,.jpeg,.svg" />
+              <input
+                class="file-input"
+                id="cover-file"
+                type="file"
+                name="cover"
+                accept=".png,.jpg,.jpeg,.svg"
+              />
               <span class="file-cta">
                 <span class="file-icon">
                   <i class="fas fa-upload"></i>
@@ -63,16 +76,39 @@
           <div class="columns">
             <label for="" class="column is-desktop">
               프로젝트 목록
-              <div class="column" style="display: flex; flex-direction:row">
-                <select name="project" id="project-selector" class="select" style="width: 100%">
+              <div class="column" style="display: flex; flex-direction: row;">
+                <select
+                  name="project"
+                  id="project-selector"
+                  class="select"
+                  style="width: 100%;"
+                >
                   <% for (let project of projects) { %>
-                    <option value="<%= project.id %>"><%= project.name %>(<%= project.id %>)</option>
+                  <option value="<%= project.id %>"
+                    ><%= project.name %>(<%= project.id %>)</option
+                  >
                   <% } %>
                 </select>
-                <button id="connect-project-to-unit-project" type="button" class="button is-success" style="margin-left: 10px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; height: 30px;" onclick="connectProjectToUnitProject()">추가하기</button>
+                <button
+                  id="connect-project-to-unit-project"
+                  type="button"
+                  class="button is-success"
+                  style="
+                    margin-left: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    height: 30px;
+                  "
+                  onclick="connectProjectToUnitProject()"
+                >
+                  추가하기
+                </button>
               </div>
               <div class="column">
-                <% const includedProjects = projects.filter((project) => project.unitProjectId == unitProject.id) %>
+                <% const includedProjects = projects.filter((project) =>
+                project.unitProjectId == unitProject.id) %>
                 <table
                   class="table is-bordered is-hoverable is-fullwidth has-text-centered"
                 >
@@ -86,25 +122,38 @@
                   </thead>
                   <tbody>
                     <% for (let project of includedProjects) { %>
-                      <tr class="pill">
-                        <td><%= project.name %></td>
-                        <td><%= project.id %>)</td>
-                        <td><%= project.User.name %></td>
-                        <td>
-                          <button type="button" class="button is-danger is-small" onclick="disconnectProjectToUnitProject('<%= project.id %>')">추가 해제</button>
-                        </td>
-                      </tr>
+                    <tr class="pill">
+                      <td><%= project.name %></td>
+                      <td><%= project.id %>)</td>
+                      <td><%= project.User.name %></td>
+                      <td>
+                        <button
+                          type="button"
+                          class="button is-danger is-small"
+                          onclick="disconnectProjectToUnitProject('<%= project.id %>')"
+                        >
+                          추가 해제
+                        </button>
+                      </td>
+                    </tr>
                     <% } %>
                   </tbody>
                 </table>
               </div>
             </label>
           </div>
-          
 
           <div class="row mt-3">
-            <button type="submit" class="button is-success is-pulled-right">저장하기</button>
-            <button type="button" id="delete" class="button is-danger is-pulled-right mr-2">삭제하기</button>
+            <button type="submit" class="button is-success is-pulled-right">
+              저장하기
+            </button>
+            <button
+              type="button"
+              id="delete"
+              class="button is-danger is-pulled-right mr-2"
+            >
+              삭제하기
+            </button>
           </div>
         </form>
       </div>
@@ -120,27 +169,31 @@
       const projectId = $("#project-selector").val();
       $.ajax({
         method: "get",
-        url: `/api/process/connect-project-to-unit-project?projectId=${projectId}&unitProjectId=${unitProjectId}`
-      }).done(() => {
-        window.location.reload();
-      }).fail((result) => {
-        alert('실패하였습니다')
-        console.log(result)
-        // window.location.reload();
+        url: `/api/process/connect-project-to-unit-project?projectId=${projectId}&unitProjectId=${unitProjectId}`,
       })
+        .done(() => {
+          window.location.reload();
+        })
+        .fail((result) => {
+          alert("실패하였습니다");
+          console.log(result);
+          // window.location.reload();
+        });
     }
-    
+
     function disconnectProjectToUnitProject(projectId) {
       const unitProjectId = "<%= unitProject.id %>";
       $.ajax({
         method: "get",
-        url: `/api/process/disconnect-project-to-unit-project?projectId=${projectId}&unitProjectId=${unitProjectId}`
-      }).done(() => {
-        window.location.reload();
-      }).fail((result) => {
-        alert('실패하였습니다')
-        console.log(result);
+        url: `/api/process/disconnect-project-to-unit-project?projectId=${projectId}&unitProjectId=${unitProjectId}`,
       })
+        .done(() => {
+          window.location.reload();
+        })
+        .fail((result) => {
+          alert("실패하였습니다");
+          console.log(result);
+        });
     }
   </script>
 </html>

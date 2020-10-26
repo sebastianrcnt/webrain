@@ -3,16 +3,53 @@
   <% include ../partials/head %>
   <body>
     <div id="root" class="expanded">
-      <form action="/admin/register" class="login" autocomplete="off" method="POST">
+      <form
+        action="/admin/register"
+        class="login"
+        autocomplete="off"
+        method="POST"
+      >
         <h1 class="has-text-centered mb-3 is-size-4 has-text-weight-bold">
           연구자/관리자 회원가입
         </h1>
-        <input name="email" type="email" class="input mb-2" placeholder="이메일" required />
-        <input name="name" type="text" class="input mb-2" placeholder="이름" required />
-        <input name="phone" type="phone" class="input mb-2" placeholder="전화번호" />
-        <input name="password" type="password" class="input mb-2" placeholder="비밀번호" required />
-        <input name="password2" type="password" class="input mb-2" placeholder="비밀번호 확인" required />
-        <button class="button is-primary has-text-weight-bold mb-2" type="submit">
+        <input
+          name="email"
+          type="email"
+          class="input mb-2"
+          placeholder="이메일"
+          required
+        />
+        <input
+          name="name"
+          type="text"
+          class="input mb-2"
+          placeholder="이름"
+          required
+        />
+        <input
+          name="phone"
+          type="phone"
+          class="input mb-2"
+          placeholder="전화번호"
+        />
+        <input
+          name="password"
+          type="password"
+          class="input mb-2"
+          placeholder="비밀번호"
+          required
+        />
+        <input
+          name="password2"
+          type="password"
+          class="input mb-2"
+          placeholder="비밀번호 확인"
+          required
+        />
+        <button
+          class="button is-primary has-text-weight-bold mb-2"
+          type="submit"
+        >
           가입하기
         </button>
         <a href="/admin/login" class="button is-secondary">로그인</a>

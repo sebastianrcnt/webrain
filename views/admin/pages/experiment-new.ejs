@@ -55,7 +55,7 @@
               </span>
               <span id="zip-name" class="file-name"></span>
               <script>
-                $("input#zip").on('change', function (event) {
+                $("input#zip").on("change", function (event) {
                   var i = $(this).prev("label").clone();
                   var file = $("input#zip")[0].files[0].name;
                   $("#zip-name").text(file);

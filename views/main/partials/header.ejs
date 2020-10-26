@@ -10,13 +10,19 @@
   <nav class="menu-wrap">
     <ul class="sub-menu">
       <% if (loggedInUser) { %>
-      <li style="font-size: 1rem; font-weight: 300; color: white"><%- loggedInUser ? loggedInUser.name : null %>님 반갑습니다.</li>
+      <li style="font-size: 1rem; font-weight: 300; color: white;">
+        <%- loggedInUser ? loggedInUser.name : null %>님 반갑습니다.
+      </li>
       <% } %>
       <li>
         <% if (loggedInUser) { %>
-        <a style="font-size: 1rem; font-weight: 300" href="/main/logout">로그아웃</a>
+        <a style="font-size: 1rem; font-weight: 300;" href="/main/logout"
+          >로그아웃</a
+        >
         <% } else { %>
-        <a style="font-size: 1rem; font-weight: 300" href="/main/login">로그인</a>
+        <a style="font-size: 1rem; font-weight: 300;" href="/main/login"
+          >로그인</a
+        >
         <% } %>
       </li>
     </ul>

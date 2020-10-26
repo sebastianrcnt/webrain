@@ -7,7 +7,10 @@
       <section>
         <!-- Project -->
         <div class="card px-3 py-3">
-          <table class="table is-fullwidth has-text-centered" id="projects-table">
+          <table
+            class="table is-fullwidth has-text-centered"
+            id="projects-table"
+          >
             <thead>
               <tr>
                 <th>ID</th>
@@ -31,14 +34,28 @@
                 </td>
                 <td><%= project.public == 0 ? "아니오" : "예" %></td>
                 <td>
-                  <a href="/admin/projects/<%= project.id %>" class="button is-info is-small is-centered"> <i class="fa fa-edit mr-1"></i>수정 </a>
-                  <button data-project-id="<%= project.id %>" type="button" class="button delete-project-button is-danger is-small is-centered"><i class="fa fa-trash mr-1"></i>삭제</button>
+                  <a
+                    href="/admin/projects/<%= project.id %>"
+                    class="button is-info is-small is-centered"
+                  >
+                    <i class="fa fa-edit mr-1"></i>수정
+                  </a>
+                  <button
+                    data-project-id="<%= project.id %>"
+                    type="button"
+                    class="button delete-project-button is-danger is-small is-centered"
+                  >
+                    <i class="fa fa-trash mr-1"></i>삭제
+                  </button>
                 </td>
               </tr>
               <% } %>
             </tbody>
             <tfoot>
-              <a href="/admin/projects/new" class="button is-primary is-pulled-right mr-2 mb-6">
+              <a
+                href="/admin/projects/new"
+                class="button is-primary is-pulled-right mr-2 mb-6"
+              >
                 새로운 프로젝트
               </a>
             </tfoot>
@@ -50,18 +67,18 @@
   <script>
     $(document).ready(() => {
       $(".delete-project-button").on("click", (event) => {
-        const projectId = $(event.target).attr("data-project-id")
+        const projectId = $(event.target).attr("data-project-id");
         $.ajax({ method: "delete", url: `/admin/projects/${projectId}` })
           .done(() => {
-            alert("성공적으로 삭제되었습니다")
+            alert("성공적으로 삭제되었습니다");
           })
           .fail((error) => {
-            alert("삭제에 실패하였습니다")
+            alert("삭제에 실패하였습니다");
           })
           .always((result) => {
-            window.location.reload()
-          })
-      })
-    })
+            window.location.reload();
+          });
+      });
+    });
   </script>
 </html>

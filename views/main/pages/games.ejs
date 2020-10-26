@@ -7,7 +7,8 @@
     <div class="wrap-all">
       <% include ../partials/header %>
       <!-- Games -->
-      <% const myGames= results.filter(result=> result.User.email == loggedInUser.email) %>
+      <% const myGames= results.filter(result=> result.User.email ==
+      loggedInUser.email) %>
       <!-- Games Incompleted -->
       <% const incompletedGames = myGames.filter(game => game.json == "{}") %>
       <!-- Games Completed -->
@@ -39,7 +40,10 @@
             <li>
               <a href="/main/game/<%= game.id %>" class="list-link">
                 <span class="image-container">
-                  <img src="/uploads/<%= game.Experiment.coverFileId %>" alt="any" />
+                  <img
+                    src="/uploads/<%= game.Experiment.coverFileId %>"
+                    alt="any"
+                  />
                 </span>
                 <span class="list-content-thumbnail-title">
                   <span class="item-title"><%= game.Experiment.name %> </span>
@@ -65,11 +69,16 @@
                 <li>
                   <a href="/main/game/<%= game.id %>" class="list-link">
                     <span class="list-content-thumbnail-title">
-                      <span class="item-title"><%= game.Experiment.name %></span>
+                      <span class="item-title"
+                        ><%= game.Experiment.name %></span
+                      >
                       <span class="item-text"><%= game.Project.name %></span>
                     </span>
                     <span class="image-container">
-                      <img src="/uploads/<%= game.Experiment.coverFileId %>" alt="any" />
+                      <img
+                        src="/uploads/<%= game.Experiment.coverFileId %>"
+                        alt="any"
+                      />
                     </span>
                   </a>
                   <span class="icon-container">
@@ -86,11 +95,16 @@
                 <li>
                   <a href="/main/game/<%= game.id %>" class="list-link">
                     <span class="list-content-thumbnail-title">
-                      <span class="item-title"><%= game.Experiment.name %></span>
+                      <span class="item-title"
+                        ><%= game.Experiment.name %></span
+                      >
                       <span class="item-text"><%= game.Project.name %></span>
                     </span>
                     <span class="image-container">
-                      <img src="/uploads/<%= game.Experiment.coverFileId %>" alt="any" />
+                      <img
+                        src="/uploads/<%= game.Experiment.coverFileId %>"
+                        alt="any"
+                      />
                     </span>
                   </a>
                   <span class="icon-container">

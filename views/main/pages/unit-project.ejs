@@ -8,34 +8,26 @@
       <% include ../partials/header %>
       <!-- Games -->
       <section class="list-content-section">
-        <div class="list-content-header">
-        </div>
+        <div class="list-content-header"></div>
         <style>
           .image-container img {
             object-fit: contain;
           }
         </style>
-          <%
-          const myGames = results.filter((result) => {
-            return result.User.email === loggedInUser.email 
-          })
-          %>
-          <% 
-          projects = projects.filter((project) => {
-            // 1. filter projects that are included in at least one of myGames.
-            return !!myGames.filter((game) => game.Project.id === project.id).length;
-          })
-          projects = projects.filter((project) => {
-            // 2. filter projects that are included in specific unitProject.
-            const b2 = !!unitProject.Project.filter((proj) => {
-              return proj.id === project.id
-            }).length
-            console.log(project.unitProjectId, unitProject.id)
-            return project.unitProjectId === unitProject.id
-          })
-          %>
+        <% const myGames = results.filter((result) => { return result.User.email
+        === loggedInUser.email }) %> <% projects = projects.filter((project) =>
+        { // 1. filter projects that are included in at least one of myGames.
+        return !!myGames.filter((game) => game.Project.id ===
+        project.id).length; }) projects = projects.filter((project) => { // 2.
+        filter projects that are included in specific unitProject. const b2 =
+        !!unitProject.Project.filter((proj) => { return proj.id === project.id
+        }).length console.log(project.unitProjectId, unitProject.id) return
+        project.unitProjectId === unitProject.id }) %>
         <div class="list-content-container">
-          <h3><i class="fas fa-list"></i><%= unitProject.name %>(<%= unitProject.id %>)</h3>
+          <h3>
+            <i class="fas fa-list"></i><%= unitProject.name %>(<%=
+            unitProject.id %>)
+          </h3>
           <ul class="list-content-thumbnail">
             <% for (let project of projects) { %>
             <li>

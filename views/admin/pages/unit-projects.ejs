@@ -7,7 +7,10 @@
       <section>
         <!-- Project -->
         <div class="card px-3 py-3">
-          <table class="table is-fullwidth has-text-centered" id="projects-table">
+          <table
+            class="table is-fullwidth has-text-centered"
+            id="projects-table"
+          >
             <thead>
               <tr>
                 <th>ID</th>
@@ -23,13 +26,21 @@
                 </td>
                 <td><%= unitProject.name %></td>
                 <td>
-                  <a href="/admin/unit-project/<%= unitProject.id %>" class="button is-info is-small is-centered"> <i class="fa fa-edit mr-1"></i>수정 </a>
+                  <a
+                    href="/admin/unit-project/<%= unitProject.id %>"
+                    class="button is-info is-small is-centered"
+                  >
+                    <i class="fa fa-edit mr-1"></i>수정
+                  </a>
                 </td>
               </tr>
               <% } %>
             </tbody>
             <tfoot>
-              <a href="/admin/unit-projects/new" class="button is-primary is-pulled-right mr-2 mb-6">
+              <a
+                href="/admin/unit-projects/new"
+                class="button is-primary is-pulled-right mr-2 mb-6"
+              >
                 새로운 단위프로젝트
               </a>
             </tfoot>
@@ -38,6 +49,5 @@
       </section>
     </div>
   </body>
-  <script>
-  </script>
+  <script></script>
 </html>

@@ -21,9 +21,15 @@
           <ul class="list-content-thumbnail">
             <% for (let unitProject of unitProjects) { %>
             <li>
-              <a href="/main/unit-project/<%= unitProject.id %>" class="list-link">
+              <a
+                href="/main/unit-project/<%= unitProject.id %>"
+                class="list-link"
+              >
                 <span class="image-container">
-                  <img src="/uploads/<%= unitProject.coverFileId %>" alt="any" />
+                  <img
+                    src="/uploads/<%= unitProject.coverFileId %>"
+                    alt="any"
+                  />
                 </span>
                 <span class="list-content-thumbnail-title">
                   <span class="item-title"><%= unitProject.name %> </span>
