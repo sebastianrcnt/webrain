@@ -1,9 +1,9 @@
 {
   "name": "webbrain-publish",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "forever ./bin/www",
+    "start": "PORT=8080 forever ./bin/www",
     "dev": "PORT=8080 nodemon ./bin/www",
     "migrate": "prisma migrate save --experimental && prisma migrate up --experimental",
     "generate": "prisma generate",
