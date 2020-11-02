@@ -21,17 +21,33 @@
           </h3>
           <ul class="list-content-thumbnail">
             <% for (let project of projects) { %>
-            <li>
-              <a href="/main/project/<%= project.id %>" class="list-link">
-                <span class="image-container">
-                  <img src="/uploads/<%= project.coverFileId %>" alt="any" />
-                </span>
-                <span class="list-content-thumbnail-title">
-                  <span class="item-title"><%= project.name %> </span>
-                  <span class="item-text"><%= project.description %></span>
-                </span>
-              </a>
-            </li>
+              <% if (project.isAvailable) { %>
+                <!-- 잠긴 프로젝트가 아닐 때! -->
+                <li>
+                  <a href="/main/project/<%= project.id %>" class="list-link">
+                    <span class="image-container">
+                      <img src="/uploads/<%= project.coverFileId %>" alt="any" />
+                    </span>
+                    <span class="list-content-thumbnail-title">
+                      <span class="item-title"><%= project.name %> </span>
+                      <span class="item-text"><%= project.description %></span>
+                    </span>
+                  </a>
+                </li>
+              <% } else { %>
+                <!-- 잠긴 프로젝트일 때 -->
+                <li>
+                  <a onclick="alert('잠긴 프로젝트입니다.')" class="list-link">
+                    <span class="image-container">
+                      <img src="/uploads/<%= project.coverFileId %>" alt="any" />
+                    </span>
+                    <span class="list-content-thumbnail-title">
+                      <span class="item-title"><%= project.name %> </span>
+                      <span class="item-text"><%= project.description %></span>
+                    </span>
+                  </a>
+                </li>
+              <% } %>
             <% } %>
           </ul>
         </div>

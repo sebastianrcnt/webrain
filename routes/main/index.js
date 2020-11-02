@@ -10,6 +10,7 @@ const HomeProvider = require("../../providers/home");
 const ProjectsProvider = require("../../providers/projects");
 const UnitProjectsProvider = require("../../providers/unit-projects");
 const { PublicRestrictor } = require("../../middlewares/filter-access");
+const { getAvailableProjects } = require("../../services/games");
 
 // Routes
 MainRouter.get(
@@ -64,13 +65,21 @@ MainRouter.get(
     UnitProjectsProvider.provideOneById(),
     ProjectsProvider.provideAll(),
     ResultsProvider.provideAll(),
-    (req, res) => {
+    async (req, res) => {
       // 유닛프로젝트 내부 프로젝트 중 내가 속한 프로젝트가 있는 것 분류
-      console.log(req.context);
-      let projects = req.context.projects.filter(
-        (project) => project.User.email === req.user.email
+      const availableProjects = await getAvailableProjects(req.user.email)
+      const availableProjectIds = availableProjects.map(
+        (project) => project.id
       );
-      req.context = { ...req.context };
+      let projects = req.context.projects
+        .filter((project) => project.User.email === req.user.email)
+        .map((project) => {
+          return {
+            ...project,
+            isAvailable: availableProjectIds.includes(project.id),
+          };
+        }); // 사용자에게 속한 프로젝트만 분류
+      req.context = { ...req.context, projects };
       res.render("main/pages/unit-project", req.context);
     }
   )
