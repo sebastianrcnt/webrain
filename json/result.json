@@ -1,1066 +1,1067 @@
 [
-  {
-    "rt": 4652.585000003455,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/inst.png\" >",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 0,
-    "time_elapsed": 4654,
-    "internal_node_id": "0.0-0.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "image",
-        "identifier": "I11",
-        "filePath": "img/START.png",
-        "button": false
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 1,
-    "time_elapsed": 5160,
-    "internal_node_id": "0.0-1.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 368.86499999673106,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F1.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 2,
-    "time_elapsed": 5530,
-    "internal_node_id": "0.0-2.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 3,
-    "time_elapsed": 6035,
-    "internal_node_id": "0.0-3.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 433.71499999193475,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F2.png\" >",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 4,
-    "time_elapsed": 6469,
-    "internal_node_id": "0.0-4.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 5,
-    "time_elapsed": 6970,
-    "internal_node_id": "0.0-5.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 352.3599999898579,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F1.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 6,
-    "time_elapsed": 7323,
-    "internal_node_id": "0.0-6.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 7,
-    "time_elapsed": 7824,
-    "internal_node_id": "0.0-7.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 315.6899999885354,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F3.png\" >",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 8,
-    "time_elapsed": 8141,
-    "internal_node_id": "0.0-8.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 9,
-    "time_elapsed": 8645,
-    "internal_node_id": "0.0-9.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 297.6650000200607,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F4.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 10,
-    "time_elapsed": 8943,
-    "internal_node_id": "0.0-10.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 11,
-    "time_elapsed": 9444,
-    "internal_node_id": "0.0-11.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 293.66500000469387,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F3.png\" >",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 12,
-    "time_elapsed": 9738,
-    "internal_node_id": "0.0-12.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 13,
-    "time_elapsed": 10244,
-    "internal_node_id": "0.0-13.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 561.7349999956787,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F5.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 14,
-    "time_elapsed": 10806,
-    "internal_node_id": "0.0-14.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 15,
-    "time_elapsed": 11310,
-    "internal_node_id": "0.0-15.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 290.20499999751337,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F6.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 16,
-    "time_elapsed": 11600,
-    "internal_node_id": "0.0-16.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 17,
-    "time_elapsed": 12104,
-    "internal_node_id": "0.0-17.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 283.579999988433,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F7.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 18,
-    "time_elapsed": 12388,
-    "internal_node_id": "0.0-18.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 19,
-    "time_elapsed": 12890,
-    "internal_node_id": "0.0-19.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 301.1500000138767,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F6.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 20,
-    "time_elapsed": 13192,
-    "internal_node_id": "0.0-20.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 21,
-    "time_elapsed": 13697,
-    "internal_node_id": "0.0-21.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 353.86999999172986,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F4.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 22,
-    "time_elapsed": 14052,
-    "internal_node_id": "0.0-22.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 23,
-    "time_elapsed": 14555,
-    "internal_node_id": "0.0-23.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 435.6450000195764,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F7.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 24,
-    "time_elapsed": 14991,
-    "internal_node_id": "0.0-24.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 25,
-    "time_elapsed": 15493,
-    "internal_node_id": "0.0-25.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 124.7399999992922,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F4.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 26,
-    "time_elapsed": 15618,
-    "internal_node_id": "0.0-26.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 27,
-    "time_elapsed": 16119,
-    "internal_node_id": "0.0-27.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 464.35999998357147,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F5.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 28,
-    "time_elapsed": 16584,
-    "internal_node_id": "0.0-28.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 29,
-    "time_elapsed": 17089,
-    "internal_node_id": "0.0-29.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 342.9199999955017,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F2.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 30,
-    "time_elapsed": 17433,
-    "internal_node_id": "0.0-30.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 31,
-    "time_elapsed": 17936,
-    "internal_node_id": "0.0-31.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 218.26500000315718,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F8.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 32,
-    "time_elapsed": 18155,
-    "internal_node_id": "0.0-32.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 33,
-    "time_elapsed": 18657,
-    "internal_node_id": "0.0-33.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 317.9249999811873,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F2.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 34,
-    "time_elapsed": 18975,
-    "internal_node_id": "0.0-34.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 35,
-    "time_elapsed": 19479,
-    "internal_node_id": "0.0-35.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 369.6549999876879,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F6.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 36,
-    "time_elapsed": 19850,
-    "internal_node_id": "0.0-36.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 37,
-    "time_elapsed": 20351,
-    "internal_node_id": "0.0-37.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 367.0599999895785,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F3.png\" >",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 38,
-    "time_elapsed": 20719,
-    "internal_node_id": "0.0-38.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 39,
-    "time_elapsed": 21223,
-    "internal_node_id": "0.0-39.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 321.83500000974163,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F8.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 40,
-    "time_elapsed": 21546,
-    "internal_node_id": "0.0-40.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 41,
-    "time_elapsed": 22048,
-    "internal_node_id": "0.0-41.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 316.7599999869708,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F1.png\" >",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 42,
-    "time_elapsed": 22366,
-    "internal_node_id": "0.0-42.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": null,
-    "stimulus": "<p style=\"font-size:10px;\">+</p>",
-    "key_press": null,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 43,
-    "time_elapsed": 22866,
-    "internal_node_id": "0.0-43.0",
-    "correct_answer": null,
-    "choices": null
-  },
-  {
-    "rt": 469.64999998454005,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F8.png\" >",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 44,
-    "time_elapsed": 23337,
-    "internal_node_id": "0.0-44.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "s1",
-        "content": "X",
-        "fontSize": 10,
-        "fontColor": null
-      },
-      {
-        "stimulusType": "text",
-        "identifier": "s2",
-        "content": "O",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": 1847.5599999947008,
-    "stimulus": "<p style=\"font-size:40px;\">어려웠을텐데 포기하지 않고 열심히 해주어서 고마워요</p>",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 45,
-    "time_elapsed": 25185,
-    "internal_node_id": "0.0-45.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "T8",
-        "content": "물고기 도감을 획득했어!",
-        "fontSize": 40,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": 1628.645000018878,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F6.png\" >",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 46,
-    "time_elapsed": 26814,
-    "internal_node_id": "0.0-46.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "T3",
-        "content": "다음",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": 450.3699999768287,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F7.png\" >",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 47,
-    "time_elapsed": 27266,
-    "internal_node_id": "0.0-47.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "T3",
-        "content": "다음",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": 560.5000000214204,
-    "stimulus": "<img src=\"/uploads/A7bXBI8Ur/lake_nback_i/img/F8.png\" >",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 48,
-    "time_elapsed": 27827,
-    "internal_node_id": "0.0-48.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "T3",
-        "content": "다음",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": 1685.475000005681,
-    "stimulus": "<p style=\"font-size:40px;\">수고하셨습니다. 다음 질문에 대답해 주세요.</p>",
-    "button_pressed": "0",
-    "trial_type": "html-button-response",
-    "trial_index": 49,
-    "time_elapsed": 29513,
-    "internal_node_id": "0.0-49.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "text",
-        "identifier": "T3",
-        "content": "다음",
-        "fontSize": 10,
-        "fontColor": null
-      }
-    ]
-  },
-  {
-    "rt": 562.0899999921676,
-    "stimulus": "<p style=\"font-size:10px;\">과제가 어려웠다</p>",
-    "button_pressed": "2",
-    "trial_type": "html-button-response",
-    "trial_index": 50,
-    "time_elapsed": 30076,
-    "internal_node_id": "0.0-50.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "image",
-        "identifier": "I80",
-        "filePath": "img/1.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I81",
-        "filePath": "img/2.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I82",
-        "filePath": "img/3.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I83",
-        "filePath": "img/4.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I84",
-        "filePath": "img/5.png",
-        "button": false
-      }
-    ]
-  },
-  {
-    "rt": 914.3850000109524,
-    "stimulus": "<p style=\"font-size:10px;\">과제가 재미 있었다</p>",
-    "button_pressed": "3",
-    "trial_type": "html-button-response",
-    "trial_index": 51,
-    "time_elapsed": 30992,
-    "internal_node_id": "0.0-51.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "image",
-        "identifier": "I80",
-        "filePath": "img/1.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I81",
-        "filePath": "img/2.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I82",
-        "filePath": "img/3.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I83",
-        "filePath": "img/4.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I84",
-        "filePath": "img/5.png",
-        "button": false
-      }
-    ]
-  },
-  {
-    "rt": 817.4599999911152,
-    "stimulus": "<p style=\"font-size:10px;\">과제를 하는 동안 주변에 방해받지 않고 집중 할 수 있었다</p>",
-    "button_pressed": "1",
-    "trial_type": "html-button-response",
-    "trial_index": 52,
-    "time_elapsed": 31811,
-    "internal_node_id": "0.0-52.0",
-    "correct_answer": null,
-    "choices": [
-      {
-        "stimulusType": "image",
-        "identifier": "I80",
-        "filePath": "img/1.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I81",
-        "filePath": "img/2.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I82",
-        "filePath": "img/3.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I83",
-        "filePath": "img/4.png",
-        "button": false
-      },
-      {
-        "stimulusType": "image",
-        "identifier": "I84",
-        "filePath": "img/5.png",
-        "button": false
-      }
-    ]
-  },
-  {
-    "rt": 1340.0799999944866,
-    "stimulus": "<p style=\"font-size:40px;\">Thank you!</p>",
-    "key_press": 75,
-    "trial_type": "html-keyboard-response",
-    "trial_index": 53,
-    "time_elapsed": 33152,
-    "internal_node_id": "0.0-53.0",
-    "correct_answer": null,
-    "choices": null
-  }
+    {
+        "rt": 1347.08999999566,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I1.png\" >",
+        "button_pressed": "0",
+        "trial_type": "html-button-response",
+        "trial_index": 0,
+        "time_elapsed": 1350,
+        "internal_node_id": "0.0-0.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "T1",
+                "content": "다음",
+                "fontSize": 50,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 2918.764999951236,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I2.png\" >",
+        "button_pressed": "0",
+        "trial_type": "html-button-response",
+        "trial_index": 1,
+        "time_elapsed": 4270,
+        "internal_node_id": "0.0-1.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "T1",
+                "content": "다음",
+                "fontSize": 50,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 1303.0349999899045,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I3.png\" >",
+        "button_pressed": "0",
+        "trial_type": "html-button-response",
+        "trial_index": 2,
+        "time_elapsed": 5574,
+        "internal_node_id": "0.0-2.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "T1",
+                "content": "다음",
+                "fontSize": 50,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 351.2099999934435,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I4.png\" >",
+        "button_pressed": "0",
+        "trial_type": "html-button-response",
+        "trial_index": 3,
+        "time_elapsed": 5925,
+        "internal_node_id": "0.0-3.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "T1",
+                "content": "다음",
+                "fontSize": 50,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 335.9000000054948,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I5.png\" >",
+        "button_pressed": "0",
+        "trial_type": "html-button-response",
+        "trial_index": 4,
+        "time_elapsed": 6262,
+        "internal_node_id": "0.0-4.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "T1",
+                "content": "다음",
+                "fontSize": 50,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 22742.834999982733,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I6.png\" >",
+        "button_pressed": "0",
+        "trial_type": "html-button-response",
+        "trial_index": 5,
+        "time_elapsed": 29005,
+        "internal_node_id": "0.0-5.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "T1",
+                "content": "다음",
+                "fontSize": 50,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 407.4599999585189,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/inst.png\" >",
+        "button_pressed": "0",
+        "trial_type": "html-button-response",
+        "trial_index": 6,
+        "time_elapsed": 29413,
+        "internal_node_id": "0.0-6.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "image",
+                "identifier": "I11",
+                "filePath": "img/START.png",
+                "button": false
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 7,
+        "time_elapsed": 31920,
+        "internal_node_id": "0.0-7.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F3.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 8,
+        "time_elapsed": 32422,
+        "internal_node_id": "0.0-8.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 9,
+        "time_elapsed": 34926,
+        "internal_node_id": "0.0-9.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F6.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 10,
+        "time_elapsed": 35428,
+        "internal_node_id": "0.0-10.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 11,
+        "time_elapsed": 37932,
+        "internal_node_id": "0.0-11.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F2.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 12,
+        "time_elapsed": 38437,
+        "internal_node_id": "0.0-12.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 13,
+        "time_elapsed": 40938,
+        "internal_node_id": "0.0-13.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F2.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 14,
+        "time_elapsed": 41442,
+        "internal_node_id": "0.0-14.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 15,
+        "time_elapsed": 43946,
+        "internal_node_id": "0.0-15.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F5.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 16,
+        "time_elapsed": 44450,
+        "internal_node_id": "0.0-16.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 17,
+        "time_elapsed": 46953,
+        "internal_node_id": "0.0-17.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F7.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 18,
+        "time_elapsed": 47457,
+        "internal_node_id": "0.0-18.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 19,
+        "time_elapsed": 49958,
+        "internal_node_id": "0.0-19.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F7.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 20,
+        "time_elapsed": 50464,
+        "internal_node_id": "0.0-20.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 21,
+        "time_elapsed": 52968,
+        "internal_node_id": "0.0-21.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F8.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 22,
+        "time_elapsed": 53470,
+        "internal_node_id": "0.0-22.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 23,
+        "time_elapsed": 55975,
+        "internal_node_id": "0.0-23.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F1.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 24,
+        "time_elapsed": 56478,
+        "internal_node_id": "0.0-24.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 25,
+        "time_elapsed": 58980,
+        "internal_node_id": "0.0-25.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F1.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 26,
+        "time_elapsed": 59485,
+        "internal_node_id": "0.0-26.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 27,
+        "time_elapsed": 61986,
+        "internal_node_id": "0.0-27.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F6.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 28,
+        "time_elapsed": 62489,
+        "internal_node_id": "0.0-28.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 29,
+        "time_elapsed": 64991,
+        "internal_node_id": "0.0-29.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F2.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 30,
+        "time_elapsed": 65497,
+        "internal_node_id": "0.0-30.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 31,
+        "time_elapsed": 68000,
+        "internal_node_id": "0.0-31.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F4.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 32,
+        "time_elapsed": 68503,
+        "internal_node_id": "0.0-32.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 33,
+        "time_elapsed": 71004,
+        "internal_node_id": "0.0-33.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F4.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 34,
+        "time_elapsed": 71509,
+        "internal_node_id": "0.0-34.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 35,
+        "time_elapsed": 74015,
+        "internal_node_id": "0.0-35.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F3.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 36,
+        "time_elapsed": 74519,
+        "internal_node_id": "0.0-36.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 37,
+        "time_elapsed": 77022,
+        "internal_node_id": "0.0-37.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F3.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 38,
+        "time_elapsed": 77526,
+        "internal_node_id": "0.0-38.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 39,
+        "time_elapsed": 80031,
+        "internal_node_id": "0.0-39.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F8.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 40,
+        "time_elapsed": 80536,
+        "internal_node_id": "0.0-40.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 41,
+        "time_elapsed": 83041,
+        "internal_node_id": "0.0-41.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F5.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 42,
+        "time_elapsed": 83544,
+        "internal_node_id": "0.0-42.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 43,
+        "time_elapsed": 86050,
+        "internal_node_id": "0.0-43.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F1.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 44,
+        "time_elapsed": 86553,
+        "internal_node_id": "0.0-44.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 45,
+        "time_elapsed": 89057,
+        "internal_node_id": "0.0-45.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F1.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 46,
+        "time_elapsed": 89562,
+        "internal_node_id": "0.0-46.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": null,
+        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "key_press": null,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 47,
+        "time_elapsed": 92066,
+        "internal_node_id": "0.0-47.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F4.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 48,
+        "time_elapsed": 92569,
+        "internal_node_id": "0.0-48.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 3467.1049999888055,
+        "stimulus": "<p style=\"font-size:40px;\">수고하셨습니다. 다음 질문에 대답해 주세요.</p>",
+        "button_pressed": "0",
+        "trial_type": "html-button-response",
+        "trial_index": 49,
+        "time_elapsed": 96037,
+        "internal_node_id": "0.0-49.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "T3",
+                "content": "다음",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 430.91500003356487,
+        "stimulus": "<p style=\"font-size:10px;\">과제가 어려웠다</p>",
+        "button_pressed": "2",
+        "trial_type": "html-button-response",
+        "trial_index": 50,
+        "time_elapsed": 96469,
+        "internal_node_id": "0.0-50.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "image",
+                "identifier": "I80",
+                "filePath": "img/1.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I81",
+                "filePath": "img/2.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I82",
+                "filePath": "img/3.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I83",
+                "filePath": "img/4.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I84",
+                "filePath": "img/5.png",
+                "button": false
+            }
+        ]
+    },
+    {
+        "rt": 333.76999996835366,
+        "stimulus": "<p style=\"font-size:10px;\">과제가 재미 있었다</p>",
+        "button_pressed": "2",
+        "trial_type": "html-button-response",
+        "trial_index": 51,
+        "time_elapsed": 96806,
+        "internal_node_id": "0.0-51.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "image",
+                "identifier": "I80",
+                "filePath": "img/1.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I81",
+                "filePath": "img/2.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I82",
+                "filePath": "img/3.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I83",
+                "filePath": "img/4.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I84",
+                "filePath": "img/5.png",
+                "button": false
+            }
+        ]
+    },
+    {
+        "rt": 317.3100000130944,
+        "stimulus": "<p style=\"font-size:10px;\">과제를 하는 동안 주변에 방해받지 않고 집중 할 수 있었다</p>",
+        "button_pressed": "2",
+        "trial_type": "html-button-response",
+        "trial_index": 52,
+        "time_elapsed": 97125,
+        "internal_node_id": "0.0-52.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "image",
+                "identifier": "I80",
+                "filePath": "img/1.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I81",
+                "filePath": "img/2.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I82",
+                "filePath": "img/3.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I83",
+                "filePath": "img/4.png",
+                "button": false
+            },
+            {
+                "stimulusType": "image",
+                "identifier": "I84",
+                "filePath": "img/5.png",
+                "button": false
+            }
+        ]
+    },
+    {
+        "rt": 2048.5399999888614,
+        "stimulus": "<p style=\"font-size:40px;\">Thank you!</p>",
+        "key_press": 74,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 53,
+        "time_elapsed": 99174,
+        "internal_node_id": "0.0-53.0",
+        "correct_answer": null,
+        "choices": null
+    }
 ]

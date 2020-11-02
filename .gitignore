@@ -5,3 +5,4 @@ uploads/*
 database.db
 prisma/.env
 log.txt
+json/result.json
