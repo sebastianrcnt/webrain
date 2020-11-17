@@ -1,59 +1,45 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <% include ../partials/head %>
-  <link rel="stylesheet" href="/css/list2.css" />
+<% include ../partials/head %>
+<link rel="stylesheet" href="/css/list2.css" />
 
-  <body>
-    <div class="wrap-all">
-      <% include ../partials/header %>
-      <!-- Games -->
-      <section class="list-content-section">
-        <div class="list-content-header"></div>
-        <style>
-          .image-container img {
-            object-fit: contain;
-          }
-        </style>
-        <div class="list-content-container">
-          <h3>
-            <i class="fas fa-list"></i><%= unitProject.name %>(<%=
+<body>
+  <div class="wrap-all">
+    <% include ../partials/header %>
+    <!-- Games -->
+    <section class="list-content-section">
+      <div class="list-content-header"></div>
+      <style>
+        .image-container img {
+          object-fit: contain;
+        }
+      </style>
+      <div class="list-content-container">
+        <h3>
+          <i class="fas fa-list"></i><%= unitProject.name %>(<%=
             unitProject.id %>)
-          </h3>
-          <ul class="list-content-thumbnail">
-            <% for (let project of projects) { %>
-              <% if (project.isAvailable) { %>
-                <!-- 잠긴 프로젝트가 아닐 때! -->
-                <li>
-                  <a href="/main/project/<%= project.id %>" class="list-link">
-                    <span class="image-container">
-                      <img src="/uploads/<%= project.coverFileId %>" alt="any" />
-                    </span>
-                    <span class="list-content-thumbnail-title">
-                      <span class="item-title"><%= project.name %> </span>
-                      <span class="item-text"><%= project.description %></span>
-                    </span>
-                  </a>
-                </li>
-              <% } else { %>
-                <!-- 잠긴 프로젝트일 때 -->
-                <li>
-                  <a onclick="alert('잠긴 프로젝트입니다.')" class="list-link">
-                    <span class="image-container">
-                      <img src="/uploads/<%= project.coverFileId %>" alt="any" />
-                    </span>
-                    <span class="list-content-thumbnail-title">
-                      <span class="item-title"><%= project.name %> </span>
-                      <span class="item-text"><%= project.description %></span>
-                    </span>
-                  </a>
-                </li>
-              <% } %>
-            <% } %>
-          </ul>
-        </div>
-      </section>
-      <!-- login contents end -->
-      <% include ../partials/footer %>
-    </div>
-  </body>
+        </h3>
+        <ul class="list-content-thumbnail">
+          <% for (let project of projects) { %>
+          <!-- 잠긴 프로젝트가 아닐 때! -->
+          <li>
+            <a href="/main/project/<%= project.id %>" class="list-link">
+              <span class="image-container">
+                <img src="/uploads/<%= project.coverFileId %>" alt="이미지를 업로드하세요" />
+              </span>
+              <span class="list-content-thumbnail-title">
+                <span class="item-title"><%= project.name %> </span>
+                <span class="item-text"><%= project.description %></span>
+              </span>
+            </a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </section>
+    <!-- login contents end -->
+    <% include ../partials/footer %>
+  </div>
+</body>
+
 </html>

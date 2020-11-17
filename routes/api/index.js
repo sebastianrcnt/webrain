@@ -7,6 +7,7 @@ const respondWithError = require("../../middlewares/error");
 const fs = require("fs");
 const path = require("path");
 const sendNotification = require("../../services/emailNotification");
+const { Parser, parse } = require("json2csv");
 
 ApiRouter.get("/login", async (req, res) => {
   const { email, password } = req.query;
@@ -175,11 +176,24 @@ ApiRouter.get("/download/game/:id", (req, res) => {
       where: { id },
     })
     .then((result) => {
-      fs.writeFileSync(
-        `json/result.json`,
-        JSON.stringify(JSON.parse(result.json), null, 4)
-      );
-      res.download(path.resolve("json/result.json"));
+      const parser = new Parser({
+        fields: [
+          "rt",
+          "stimulus",
+          "button_pressed",
+          "trial_type",
+          "trial_index",
+          "time_elapsed",
+          "internal_node_id",
+          "correct_answer",
+          "choices",
+        ],
+      });
+      
+      const csv = parser.parse(JSON.parse(result.json));
+      console.log(csv);
+      fs.writeFileSync(`json/result.csv`, csv);
+      res.download(path.resolve("json/result.csv"));
     })
     .catch((err) => {
       console.error(err);

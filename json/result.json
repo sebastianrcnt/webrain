@@ -1,126 +1,12 @@
 [
     {
-        "rt": 1347.08999999566,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I1.png\" >",
+        "rt": 1218,
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/inst.png\" >",
         "button_pressed": "0",
         "trial_type": "html-button-response",
         "trial_index": 0,
-        "time_elapsed": 1350,
+        "time_elapsed": 1220,
         "internal_node_id": "0.0-0.0",
-        "correct_answer": null,
-        "choices": [
-            {
-                "stimulusType": "text",
-                "identifier": "T1",
-                "content": "다음",
-                "fontSize": 50,
-                "fontColor": null
-            }
-        ]
-    },
-    {
-        "rt": 2918.764999951236,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I2.png\" >",
-        "button_pressed": "0",
-        "trial_type": "html-button-response",
-        "trial_index": 1,
-        "time_elapsed": 4270,
-        "internal_node_id": "0.0-1.0",
-        "correct_answer": null,
-        "choices": [
-            {
-                "stimulusType": "text",
-                "identifier": "T1",
-                "content": "다음",
-                "fontSize": 50,
-                "fontColor": null
-            }
-        ]
-    },
-    {
-        "rt": 1303.0349999899045,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I3.png\" >",
-        "button_pressed": "0",
-        "trial_type": "html-button-response",
-        "trial_index": 2,
-        "time_elapsed": 5574,
-        "internal_node_id": "0.0-2.0",
-        "correct_answer": null,
-        "choices": [
-            {
-                "stimulusType": "text",
-                "identifier": "T1",
-                "content": "다음",
-                "fontSize": 50,
-                "fontColor": null
-            }
-        ]
-    },
-    {
-        "rt": 351.2099999934435,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I4.png\" >",
-        "button_pressed": "0",
-        "trial_type": "html-button-response",
-        "trial_index": 3,
-        "time_elapsed": 5925,
-        "internal_node_id": "0.0-3.0",
-        "correct_answer": null,
-        "choices": [
-            {
-                "stimulusType": "text",
-                "identifier": "T1",
-                "content": "다음",
-                "fontSize": 50,
-                "fontColor": null
-            }
-        ]
-    },
-    {
-        "rt": 335.9000000054948,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I5.png\" >",
-        "button_pressed": "0",
-        "trial_type": "html-button-response",
-        "trial_index": 4,
-        "time_elapsed": 6262,
-        "internal_node_id": "0.0-4.0",
-        "correct_answer": null,
-        "choices": [
-            {
-                "stimulusType": "text",
-                "identifier": "T1",
-                "content": "다음",
-                "fontSize": 50,
-                "fontColor": null
-            }
-        ]
-    },
-    {
-        "rt": 22742.834999982733,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/I6.png\" >",
-        "button_pressed": "0",
-        "trial_type": "html-button-response",
-        "trial_index": 5,
-        "time_elapsed": 29005,
-        "internal_node_id": "0.0-5.0",
-        "correct_answer": null,
-        "choices": [
-            {
-                "stimulusType": "text",
-                "identifier": "T1",
-                "content": "다음",
-                "fontSize": 50,
-                "fontColor": null
-            }
-        ]
-    },
-    {
-        "rt": 407.4599999585189,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/inst.png\" >",
-        "button_pressed": "0",
-        "trial_type": "html-button-response",
-        "trial_index": 6,
-        "time_elapsed": 29413,
-        "internal_node_id": "0.0-6.0",
         "correct_answer": null,
         "choices": [
             {
@@ -133,23 +19,23 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
-        "trial_index": 7,
-        "time_elapsed": 31920,
-        "internal_node_id": "0.0-7.0",
+        "trial_index": 1,
+        "time_elapsed": 3727,
+        "internal_node_id": "0.0-1.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F3.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F3.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
-        "trial_index": 8,
-        "time_elapsed": 32422,
-        "internal_node_id": "0.0-8.0",
+        "trial_index": 2,
+        "time_elapsed": 4229,
+        "internal_node_id": "0.0-2.0",
         "correct_answer": null,
         "choices": [
             {
@@ -170,22 +56,133 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
+        "trial_index": 3,
+        "time_elapsed": 6732,
+        "internal_node_id": "0.0-3.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F6.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 4,
+        "time_elapsed": 7234,
+        "internal_node_id": "0.0-4.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 77,
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
+        "key_press": 32,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 5,
+        "time_elapsed": 7312,
+        "internal_node_id": "0.0-5.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F2.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 6,
+        "time_elapsed": 7815,
+        "internal_node_id": "0.0-6.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 181.0000000000009,
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
+        "key_press": 32,
+        "trial_type": "html-keyboard-response",
+        "trial_index": 7,
+        "time_elapsed": 7996,
+        "internal_node_id": "0.0-7.0",
+        "correct_answer": null,
+        "choices": null
+    },
+    {
+        "rt": null,
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F2.png\" >",
+        "button_pressed": null,
+        "trial_type": "html-button-response",
+        "trial_index": 8,
+        "time_elapsed": 8499,
+        "internal_node_id": "0.0-8.0",
+        "correct_answer": null,
+        "choices": [
+            {
+                "stimulusType": "text",
+                "identifier": "s1",
+                "content": "X",
+                "fontSize": 10,
+                "fontColor": null
+            },
+            {
+                "stimulusType": "text",
+                "identifier": "s2",
+                "content": "0",
+                "fontSize": 10,
+                "fontColor": null
+            }
+        ]
+    },
+    {
+        "rt": 50.00000000000182,
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
+        "key_press": 32,
+        "trial_type": "html-keyboard-response",
         "trial_index": 9,
-        "time_elapsed": 34926,
+        "time_elapsed": 8550,
         "internal_node_id": "0.0-9.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F6.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F5.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 10,
-        "time_elapsed": 35428,
+        "time_elapsed": 9052,
         "internal_node_id": "0.0-10.0",
         "correct_answer": null,
         "choices": [
@@ -207,22 +204,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 11,
-        "time_elapsed": 37932,
+        "time_elapsed": 11555,
         "internal_node_id": "0.0-11.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F2.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F7.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 12,
-        "time_elapsed": 38437,
+        "time_elapsed": 12057,
         "internal_node_id": "0.0-12.0",
         "correct_answer": null,
         "choices": [
@@ -244,22 +241,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 13,
-        "time_elapsed": 40938,
+        "time_elapsed": 14560,
         "internal_node_id": "0.0-13.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F2.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F7.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 14,
-        "time_elapsed": 41442,
+        "time_elapsed": 15062,
         "internal_node_id": "0.0-14.0",
         "correct_answer": null,
         "choices": [
@@ -281,22 +278,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 15,
-        "time_elapsed": 43946,
+        "time_elapsed": 17564,
         "internal_node_id": "0.0-15.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F5.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F8.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 16,
-        "time_elapsed": 44450,
+        "time_elapsed": 18066,
         "internal_node_id": "0.0-16.0",
         "correct_answer": null,
         "choices": [
@@ -318,22 +315,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 17,
-        "time_elapsed": 46953,
+        "time_elapsed": 20569,
         "internal_node_id": "0.0-17.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F7.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F1.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 18,
-        "time_elapsed": 47457,
+        "time_elapsed": 21072,
         "internal_node_id": "0.0-18.0",
         "correct_answer": null,
         "choices": [
@@ -355,22 +352,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 19,
-        "time_elapsed": 49958,
+        "time_elapsed": 23574,
         "internal_node_id": "0.0-19.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F7.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F1.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 20,
-        "time_elapsed": 50464,
+        "time_elapsed": 24077,
         "internal_node_id": "0.0-20.0",
         "correct_answer": null,
         "choices": [
@@ -392,22 +389,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 21,
-        "time_elapsed": 52968,
+        "time_elapsed": 26580,
         "internal_node_id": "0.0-21.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F8.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F6.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 22,
-        "time_elapsed": 53470,
+        "time_elapsed": 27083,
         "internal_node_id": "0.0-22.0",
         "correct_answer": null,
         "choices": [
@@ -429,22 +426,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 23,
-        "time_elapsed": 55975,
+        "time_elapsed": 29585,
         "internal_node_id": "0.0-23.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F1.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F2.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 24,
-        "time_elapsed": 56478,
+        "time_elapsed": 30386,
         "internal_node_id": "0.0-24.0",
         "correct_answer": null,
         "choices": [
@@ -466,22 +463,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 25,
-        "time_elapsed": 58980,
+        "time_elapsed": 33013,
         "internal_node_id": "0.0-25.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F1.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F4.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 26,
-        "time_elapsed": 59485,
+        "time_elapsed": 34010,
         "internal_node_id": "0.0-26.0",
         "correct_answer": null,
         "choices": [
@@ -503,22 +500,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 27,
-        "time_elapsed": 61986,
+        "time_elapsed": 38952,
         "internal_node_id": "0.0-27.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F6.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F4.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 28,
-        "time_elapsed": 62489,
+        "time_elapsed": 40806,
         "internal_node_id": "0.0-28.0",
         "correct_answer": null,
         "choices": [
@@ -540,22 +537,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 29,
-        "time_elapsed": 64991,
+        "time_elapsed": 52046,
         "internal_node_id": "0.0-29.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F2.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F3.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 30,
-        "time_elapsed": 65497,
+        "time_elapsed": 52549,
         "internal_node_id": "0.0-30.0",
         "correct_answer": null,
         "choices": [
@@ -577,22 +574,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 31,
-        "time_elapsed": 68000,
+        "time_elapsed": 55051,
         "internal_node_id": "0.0-31.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F4.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F3.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 32,
-        "time_elapsed": 68503,
+        "time_elapsed": 55553,
         "internal_node_id": "0.0-32.0",
         "correct_answer": null,
         "choices": [
@@ -614,22 +611,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 33,
-        "time_elapsed": 71004,
+        "time_elapsed": 58056,
         "internal_node_id": "0.0-33.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F4.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F8.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 34,
-        "time_elapsed": 71509,
+        "time_elapsed": 58558,
         "internal_node_id": "0.0-34.0",
         "correct_answer": null,
         "choices": [
@@ -651,22 +648,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 35,
-        "time_elapsed": 74015,
+        "time_elapsed": 61060,
         "internal_node_id": "0.0-35.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F3.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F5.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 36,
-        "time_elapsed": 74519,
+        "time_elapsed": 61562,
         "internal_node_id": "0.0-36.0",
         "correct_answer": null,
         "choices": [
@@ -688,22 +685,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 37,
-        "time_elapsed": 77022,
+        "time_elapsed": 64065,
         "internal_node_id": "0.0-37.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F3.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F1.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 38,
-        "time_elapsed": 77526,
+        "time_elapsed": 64567,
         "internal_node_id": "0.0-38.0",
         "correct_answer": null,
         "choices": [
@@ -725,22 +722,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 39,
-        "time_elapsed": 80031,
+        "time_elapsed": 67070,
         "internal_node_id": "0.0-39.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F8.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F1.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 40,
-        "time_elapsed": 80536,
+        "time_elapsed": 67573,
         "internal_node_id": "0.0-40.0",
         "correct_answer": null,
         "choices": [
@@ -762,22 +759,22 @@
     },
     {
         "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
+        "stimulus": "<p style=\"font-size:10px;\">+</p>",
         "key_press": null,
         "trial_type": "html-keyboard-response",
         "trial_index": 41,
-        "time_elapsed": 83041,
+        "time_elapsed": 70075,
         "internal_node_id": "0.0-41.0",
         "correct_answer": null,
         "choices": null
     },
     {
         "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F5.png\" >",
+        "stimulus": "<img src=\"/uploads/source_9b426cc1620b9e6c2d8126f590c459fe/2_lake_nback_s/img/F4.png\" >",
         "button_pressed": null,
         "trial_type": "html-button-response",
         "trial_index": 42,
-        "time_elapsed": 83544,
+        "time_elapsed": 70578,
         "internal_node_id": "0.0-42.0",
         "correct_answer": null,
         "choices": [
@@ -798,124 +795,13 @@
         ]
     },
     {
-        "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
-        "key_press": null,
-        "trial_type": "html-keyboard-response",
-        "trial_index": 43,
-        "time_elapsed": 86050,
-        "internal_node_id": "0.0-43.0",
-        "correct_answer": null,
-        "choices": null
-    },
-    {
-        "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F1.png\" >",
-        "button_pressed": null,
-        "trial_type": "html-button-response",
-        "trial_index": 44,
-        "time_elapsed": 86553,
-        "internal_node_id": "0.0-44.0",
-        "correct_answer": null,
-        "choices": [
-            {
-                "stimulusType": "text",
-                "identifier": "s1",
-                "content": "X",
-                "fontSize": 10,
-                "fontColor": null
-            },
-            {
-                "stimulusType": "text",
-                "identifier": "s2",
-                "content": "0",
-                "fontSize": 10,
-                "fontColor": null
-            }
-        ]
-    },
-    {
-        "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
-        "key_press": null,
-        "trial_type": "html-keyboard-response",
-        "trial_index": 45,
-        "time_elapsed": 89057,
-        "internal_node_id": "0.0-45.0",
-        "correct_answer": null,
-        "choices": null
-    },
-    {
-        "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F1.png\" >",
-        "button_pressed": null,
-        "trial_type": "html-button-response",
-        "trial_index": 46,
-        "time_elapsed": 89562,
-        "internal_node_id": "0.0-46.0",
-        "correct_answer": null,
-        "choices": [
-            {
-                "stimulusType": "text",
-                "identifier": "s1",
-                "content": "X",
-                "fontSize": 10,
-                "fontColor": null
-            },
-            {
-                "stimulusType": "text",
-                "identifier": "s2",
-                "content": "0",
-                "fontSize": 10,
-                "fontColor": null
-            }
-        ]
-    },
-    {
-        "rt": null,
-        "stimulus": "<p style=\"font-size:100px;\">+</p>",
-        "key_press": null,
-        "trial_type": "html-keyboard-response",
-        "trial_index": 47,
-        "time_elapsed": 92066,
-        "internal_node_id": "0.0-47.0",
-        "correct_answer": null,
-        "choices": null
-    },
-    {
-        "rt": null,
-        "stimulus": "<img src=\"/uploads/source_704d8909ab64b6935709499af6a098fc/1_lake_nback_i/img/F4.png\" >",
-        "button_pressed": null,
-        "trial_type": "html-button-response",
-        "trial_index": 48,
-        "time_elapsed": 92569,
-        "internal_node_id": "0.0-48.0",
-        "correct_answer": null,
-        "choices": [
-            {
-                "stimulusType": "text",
-                "identifier": "s1",
-                "content": "X",
-                "fontSize": 10,
-                "fontColor": null
-            },
-            {
-                "stimulusType": "text",
-                "identifier": "s2",
-                "content": "0",
-                "fontSize": 10,
-                "fontColor": null
-            }
-        ]
-    },
-    {
-        "rt": 3467.1049999888055,
+        "rt": 1811,
         "stimulus": "<p style=\"font-size:40px;\">수고하셨습니다. 다음 질문에 대답해 주세요.</p>",
         "button_pressed": "0",
         "trial_type": "html-button-response",
-        "trial_index": 49,
-        "time_elapsed": 96037,
-        "internal_node_id": "0.0-49.0",
+        "trial_index": 43,
+        "time_elapsed": 72390,
+        "internal_node_id": "0.0-43.0",
         "correct_answer": null,
         "choices": [
             {
@@ -928,13 +814,13 @@
         ]
     },
     {
-        "rt": 430.91500003356487,
+        "rt": 406,
         "stimulus": "<p style=\"font-size:10px;\">과제가 어려웠다</p>",
         "button_pressed": "2",
         "trial_type": "html-button-response",
-        "trial_index": 50,
-        "time_elapsed": 96469,
-        "internal_node_id": "0.0-50.0",
+        "trial_index": 44,
+        "time_elapsed": 72799,
+        "internal_node_id": "0.0-44.0",
         "correct_answer": null,
         "choices": [
             {
@@ -970,13 +856,13 @@
         ]
     },
     {
-        "rt": 333.76999996835366,
+        "rt": 407,
         "stimulus": "<p style=\"font-size:10px;\">과제가 재미 있었다</p>",
         "button_pressed": "2",
         "trial_type": "html-button-response",
-        "trial_index": 51,
-        "time_elapsed": 96806,
-        "internal_node_id": "0.0-51.0",
+        "trial_index": 45,
+        "time_elapsed": 73207,
+        "internal_node_id": "0.0-45.0",
         "correct_answer": null,
         "choices": [
             {
@@ -1012,13 +898,13 @@
         ]
     },
     {
-        "rt": 317.3100000130944,
+        "rt": 271,
         "stimulus": "<p style=\"font-size:10px;\">과제를 하는 동안 주변에 방해받지 않고 집중 할 수 있었다</p>",
         "button_pressed": "2",
         "trial_type": "html-button-response",
-        "trial_index": 52,
-        "time_elapsed": 97125,
-        "internal_node_id": "0.0-52.0",
+        "trial_index": 46,
+        "time_elapsed": 73480,
+        "internal_node_id": "0.0-46.0",
         "correct_answer": null,
         "choices": [
             {
@@ -1054,13 +940,13 @@
         ]
     },
     {
-        "rt": 2048.5399999888614,
+        "rt": 1334,
         "stimulus": "<p style=\"font-size:40px;\">Thank you!</p>",
-        "key_press": 74,
+        "key_press": 32,
         "trial_type": "html-keyboard-response",
-        "trial_index": 53,
-        "time_elapsed": 99174,
-        "internal_node_id": "0.0-53.0",
+        "trial_index": 47,
+        "time_elapsed": 74815,
+        "internal_node_id": "0.0-47.0",
         "correct_answer": null,
         "choices": null
     }
