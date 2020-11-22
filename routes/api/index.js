@@ -189,7 +189,7 @@ ApiRouter.get("/download/game/:id", (req, res) => {
           "choices",
         ],
       });
-      
+
       const csv = parser.parse(JSON.parse(result.json));
       console.log(csv);
       fs.writeFileSync(`json/result.csv`, csv);
