@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <% include ../partials/head %>
+  <style>
+    html {
+      background-image: url("/uploads/<%= game.Experiment.coverFileId %>");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
   <body>
     <script>
       const gameId = "<%= game.id %>";
