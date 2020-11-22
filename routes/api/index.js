@@ -7,7 +7,7 @@ const respondWithError = require("../../middlewares/error");
 const fs = require("fs");
 const path = require("path");
 const sendNotification = require("../../services/emailNotification");
-const { Parser, parse } = require("json2csv");
+const { Parser } = require("json2csv");
 
 ApiRouter.get("/login", async (req, res) => {
   const { email, password } = req.query;
